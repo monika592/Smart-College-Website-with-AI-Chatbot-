@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coursera for Campus | R.J. College</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    .page-container {
+      max-width: 1100px;
+      margin:0px auto;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+    .page-container h1 {
+      color: #10207e;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .page-container p {
+      text-align: justify;
+      line-height: 1.8;
+      color: #333;
+      font-size: 15px;
+    }
+    h2.section-title {
+      color: #003399;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    .img-box {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    canvas {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f4ff;
+      color: #10207e;
+    }
+    .view-count {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Breadcrumb -->
+  <section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+    <a href="../index.html" style="text-decoration:none;color:#0a58ca;">Home</a>
+      &nbsp; / &nbsp;<a href="#" style="text-decoration:none; color:#0a58ca;">Academics</a>
+      &nbsp; / &nbsp;<a href="#" style="text-decoration:none; color:#0a58ca;">e-Vidya</a>
+      &nbsp;/&nbsp; <span style="color:#333;">Coursera for Campus</span>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="page-container">
+    <h1>Coursera for Campus</h1>
+    <p>
+      R.J. College has partnered with <strong>Coursera for Campus</strong> to enhance learning for students and faculty.
+      This initiative provides access to more than 5,000 high-quality online courses from global universities and companies,
+      helping learners become job-ready with recognized certifications.
+    </p>
+
+    <div class="row align-items-center mt-4">
+      <div class="col-md-6">
+        <div class="img-box">
+          <img src="../assets/coursera_banner.jpg"
+               alt="Coursera for Campus" class="img-fluid rounded">
+        </div>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+        <ul class="list-unstyled ps-3">
+          <li>✔ Learn from world-class institutions like Yale, Google, IBM &amp; Stanford</li>
+          <li>✔ Earn globally recognized digital certificates</li>
+          <li>✔ Build in-demand skills in Data Science, AI, and Business</li>
+          <li>✔ Learn anytime, anywhere — flexible and self-paced</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title mt-5">Useful Links</h2>
+    <ul>
+      <li><a href="https://www.coursera.org/campus" target="_blank">Coursera for Campus Official Page</a></li>
+      <li><a href="https://www.coursera.org/" target="_blank">Explore Coursera Courses</a></li>
+      <li><a href="https://www.coursera.org/collections/free-online-courses" target="_blank">Free Courses Collection</a></li>
+      <li><a href="https://blog.coursera.org/" target="_blank">Coursera Blog</a></li>
+    </ul>
+
+    <h2 class="section-title">Industry Benchmark Over Time</h2>
+    <canvas id="industryChart" height="120"></canvas>
+
+    <h2 class="section-title">Learner Proficiency by Top Skill</h2>
+    <canvas id="skillChart" height="140"></canvas>
+
+    <h2 class="section-title">Sample Course Completion Data</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Course Name</th>
+          <th>Partner</th>
+          <th>Enrolled</th>
+          <th>Completed</th>
+          <th>Average Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Machine Learning</td>
+          <td>Stanford University</td>
+          <td>312</td>
+          <td>278</td>
+          <td>92%</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Google Data Analytics</td>
+          <td>Google</td>
+          <td>280</td>
+          <td>254</td>
+          <td>89%</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Python for Everybody</td>
+          <td>University of Michigan</td>
+          <td>220</td>
+          <td>200</td>
+          <td>94%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="view-count">
+      <i class="fa-solid fa-eye"></i> 5019 total views , 1 view today
+    </div>
+    
+  </div>
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+
+  <script>
+    // Industry Chart
+    new Chart(document.getElementById("industryChart"), {
+      type: "line",
+      data: {
+        labels: ["2020", "2021", "2022", "2023", "2024"],
+        datasets: [
+          {
+            label: "Industry Average",
+            data: [65, 70, 72, 74, 76],
+            borderColor: "#ff6384",
+            tension: 0.3,
+            fill: false
+          },
+          {
+            label: "R.J. College Students",
+            data: [60, 68, 75, 83, 90],
+            borderColor: "#36a2eb",
+            tension: 0.3,
+            fill: false
+          }
+        ]
+      },
+      options: { responsive: true, plugins: { legend: { position: "bottom" } } }
+    });
+
+    // Skills Chart
+    new Chart(document.getElementById("skillChart"), {
+      type: "bar",
+      data: {
+        labels: ["Python", "Communication", "Data Analysis", "Leadership", "Project Management", "Marketing"],
+        datasets: [{
+          label: "Students Certified",
+          data: [180, 150, 130, 120, 90, 75],
+          backgroundColor: "#10207e"
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+  </script>
+</body>
+</html>

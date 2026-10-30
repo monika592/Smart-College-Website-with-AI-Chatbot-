@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biodiversity of RJ Campus | R.J. College</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    .biodiversity-container {
+      max-width: 1100px;
+      margin: 0px auto;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+    .biodiversity-container h1 {
+      color: #10207e;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .biodiversity-container p {
+      text-align: justify;
+      line-height: 1.8;
+      color: #333;
+      font-size: 15px;
+    }
+    .biodiversity-container h2 {
+      color: #0a58ca;
+      font-size: 1.3rem;
+      margin: 25px 0 10px;
+      font-weight: 600;
+    }
+    .biodiversity-table {
+      margin: 20px 0;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .biodiversity-table th,
+    .biodiversity-table td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #10207e !important;
+      color: #fff !important;
+    }
+    .nav-tabs .nav-link {
+      color: #10207e;
+      font-weight: 600;
+    }
+    .tab-content {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-top: none;
+    }
+    .tab-content table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .tab-content th,
+    .tab-content td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+    .tab-content td:first-child {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Breadcrumb -->
+  <section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+    <a href="../index.html" style="text-decoration:none;color:#0a58ca;">Home</a> 
+       &nbsp; / &nbsp;<a href="#" style="text-decoration:none; color:#0a58ca;">Others</a>      
+       &nbsp; / &nbsp; <span style="color:#333;">Biodiversity of RJ Campus</span>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="biodiversity-container">
+    <h1>Biodiversity of RJ Campus</h1>
+
+    <h2>Introduction</h2>
+    <p>
+      Biodiversity is the existence of a number of different kinds of animals and plants which together make a good and healthy environment. Biodiversity survey is the study of biological diversity of a particular area, in which species of plant, animals and insects are enlisted.
+    </p>
+
+    <h2>Area of Survey</h2>
+    <p>
+      Campus area of Ramniranjan Jhunjhunwala College, situated in Ghatkopar (West), is studied for biodiversity. The college campus has a garden, a terrace garden, a green wall, aquaponics and hydroponics plants, cactus and succulent section, and a terrarium section.
+    </p>
+
+    <table class="biodiversity-table">
+      <tr>
+        <td><b>Plants</b></td>
+        <td>130</td>
+      </tr>
+      <tr>
+        <td><b>Animals</b></td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td><b>Birds</b></td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td><b>Butterflies</b></td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <!-- Tabs for detailed species -->
+    <ul class="nav nav-tabs" id="biodiversityTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="plants-tab" data-bs-toggle="tab" data-bs-target="#plants" type="button" role="tab">Plants</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="animals-tab" data-bs-toggle="tab" data-bs-target="#animals" type="button" role="tab">Animals</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="birds-tab" data-bs-toggle="tab" data-bs-target="#birds" type="button" role="tab">Birds</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="butterflies-tab" data-bs-toggle="tab" data-bs-target="#butterflies" type="button" role="tab">Butterflies</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="biodiversityTabContent">
+      <!-- Plants -->
+      <div class="tab-pane fade show active" id="plants" role="tabpanel">
+        <table>
+            <tr><th>#</th><th>Plant Species</th></tr>
+            <tr><td>1</td><td>Abrus precatorius</td></tr>
+            <tr><td>2</td><td>Acacia sp.</td></tr>
+            <tr><td>3</td><td>Acorus calamus</td></tr>
+            <tr><td>4</td><td>Adenium obesum</td></tr>
+            <tr><td>5</td><td>Agave sp.</td></tr>
+            <tr><td>6</td><td>Aglonema sp</td></tr>
+            <tr><td>7</td><td>Albizia saman</td></tr>
+            <tr><td>8</td><td>Aloe maculata</td></tr>
+            <tr><td>9</td><td>Aloe vera</td></tr>
+            <tr><td>10</td><td>Ananas comosus</td></tr>
+            <tr><td>11</td><td>Annona squamosa</td></tr>
+            <tr><td>12</td><td>Aristolochia elegans</td></tr>
+            <tr><td>13</td><td>Asparagus racemosus</td></tr>
+            <tr><td>14</td><td>Begonia x semperflorens-cultorum</td></tr>
+            <tr><td>15</td><td>Bougaivellia spectabilis</td></tr>
+            <tr><td>16</td><td>Bryophyllum pinnatum</td></tr>
+            <tr><td>17</td><td>Cardamine sp.</td></tr>
+            <tr><td>18</td><td>Catheranthus roseus</td></tr>
+            <tr><td>19</td><td>Centella asiatica</td></tr>
+            <tr><td>20</td><td>Chlorophytum comosum</td></tr>
+            <tr><td>21</td><td>Chrysopogon zizanioides</td></tr>
+            <tr><td>22</td><td>Cissus quadrangularis</td></tr>
+            <tr><td>23</td><td>Clematis paniculata</td></tr>
+            <tr><td>24</td><td>Clitoria ternatea</td></tr>
+            <tr><td>25</td><td>Coleus aromaticus</td></tr>
+            <tr><td>26</td><td>Coleus scutellarioides</td></tr>
+            <tr><td>27</td><td>Colocasia esculenta</td></tr>
+            <tr><td>28</td><td>Combretum indicum</td></tr>
+            <tr><td>29</td><td>Combretum rotundifolium</td></tr>
+            <tr><td>30</td><td>Cordyline fruticosa</td></tr>
+            <tr><td>31</td><td>Costus speciosus</td></tr>
+            <tr><td>32</td><td>Crassula ovata</td></tr>
+            <tr><td>33</td><td>Curcuma longa</td></tr>
+            <tr><td>34</td><td>Cyathea sp.</td></tr>
+            <tr><td>35</td><td>Cycas sp.</td></tr>
+            <tr><td>36</td><td>Cymbopogon citratus</td></tr>
+            <tr><td>37</td><td>Dendrobium sp.</td></tr>
+            <tr><td>38</td><td>Dieffenbachia seguine</td></tr>
+            <tr><td>39</td><td>Dracaena fragrans</td></tr>
+            <tr><td>40</td><td>Dracaena reflexa</td></tr>
+            <tr><td>41</td><td>Dracaena sanderiana</td></tr>
+            <tr><td>42</td><td>Dracaena trifasciata</td></tr>
+            <tr><td>43</td><td>Duranta erecta</td></tr>
+            <tr><td>44</td><td>Dypsis lutescens</td></tr>
+            <tr><td>45</td><td>Ecbolium viride</td></tr>
+            <tr><td>46</td><td>Eclipta alba</td></tr>
+            <tr><td>47</td><td>Eichhornia sp.</td></tr>
+            <tr><td>48</td><td>Epiphyllum oxypetalum</td></tr>
+            <tr><td>49</td><td>Epipremnum aureum</td></tr>
+            <tr><td>50</td><td>Ficus benjamina var. starlight</td></tr>
+            <tr><td>51</td><td>Ficus maclellandii</td></tr>
+            <tr><td>52</td><td>Ficus microcarpa</td></tr>
+            <tr><td>53</td><td>Ficus racemosa</td></tr>
+            <tr><td>54</td><td>Ficus religiosa</td></tr>
+            <tr><td>55</td><td>Ficus religiosa</td></tr>
+            <tr><td>56</td><td>Hedychium coronarium</td></tr>
+            <tr><td>57</td><td>Helecteris isora</td></tr>
+            <tr><td>58</td><td>Heliconia sp.</td></tr>
+            <tr><td>59</td><td>Hibiscus rosa sinensis</td></tr>
+            <tr><td>60</td><td>Hydrocotyle vulgaris</td></tr>
+            <tr><td>61</td><td>Hymenocallis caribaea</td></tr>
+            <tr><td>62</td><td>Ipomea aquatica</td></tr>
+            <tr><td>63</td><td>Ipomea batatas</td></tr>
+            <tr><td>64</td><td>Ixora coccinea</td></tr>
+            <tr><td>65</td><td>Jasminum auriculatum</td></tr>
+            <tr><td>66</td><td>Jatropa podagrica</td></tr>
+            <tr><td>67</td><td>Justicia adhatoda</td></tr>
+            <tr><td>68</td><td>Kalanchoe blossfeldiana</td></tr>
+            <tr><td>69</td><td>Kampferia galangal</td></tr>
+            <tr><td>70</td><td>Magnolia champaca</td></tr>
+            <tr><td>71</td><td>Mangifera indica</td></tr>
+            <tr><td>72</td><td>Mangifera indica</td></tr>
+            <tr><td>73</td><td>Mangifera indica</td></tr>
+            <tr><td>74</td><td>Mangifera indica</td></tr>
+            <tr><td>75</td><td>Manihot esculanta</td></tr>
+            <tr><td>76</td><td>Marsilea quadrifolia</td></tr>
+            <tr><td>77</td><td>Mentha piperita</td></tr>
+            <tr><td>78</td><td>Mentha spicata</td></tr>
+            <tr><td>79</td><td>Messua ferrea</td></tr>
+            <tr><td>80</td><td>Murraya koenigii</td></tr>
+            <tr><td>81</td><td>Musa × paradisiaca</td></tr>
+            <tr><td>82</td><td>Nelumpo nucifera</td></tr>
+            <tr><td>83</td><td>Notocactus Leninghausii</td></tr>
+            <tr><td>84</td><td>Ocimum sanctum</td></tr>
+            <tr><td>85</td><td>Opuntia sp.</td></tr>
+            <tr><td>86</td><td>Pandanus odorifer</td></tr>
+            <tr><td>87</td><td>Pandanus pygmaeus</td></tr>
+            <tr><td>88</td><td>Pedilanthus tithymaloides</td></tr>
+            <tr><td>89</td><td>Peltophorum pterocarpum</td></tr>
+            <tr><td>90</td><td>Peperomia pellucida</td></tr>
+            <tr><td>91</td><td>Petrea volubilis (Liana)</td></tr>
+            <tr><td>92</td><td>Philodendron brandtianum</td></tr>
+            <tr><td>93</td><td>Philodendron ceylon</td></tr>
+            <tr><td>94</td><td>Philodendron erubescens</td></tr>
+            <tr><td>95</td><td>Phoenix dactylifera</td></tr>
+            <tr><td>96</td><td>Pimenta dioica</td></tr>
+            <tr><td>97</td><td>Piper betle</td></tr>
+            <tr><td>98</td><td>Piper longum</td></tr>
+            <tr><td>99</td><td>Pistia stratiotes</td></tr>
+            <tr><td>100</td><td>Pithecellobium dulce</td></tr>
+            <tr><td>101</td><td>Plumbago auriculata</td></tr>
+            <tr><td>102</td><td>Plumeria alba</td></tr>
+            <tr><td>103</td><td>Plumeria pudica</td></tr>
+            <tr><td>104</td><td>Polyalthia longifolia</td></tr>
+            <tr><td>105</td><td>Polyscias fruticosa</td></tr>
+            <tr><td>106</td><td>Pongamia pinata</td></tr>
+            <tr><td>107</td><td>Portulaca grandiflora</td></tr>
+            <tr><td>108</td><td>Psidium guajava</td></tr>
+            <tr><td>109</td><td>Raulfia serpentina</td></tr>
+            <tr><td>110</td><td>Rosa chinensis</td></tr>
+            <tr><td>111</td><td>Ruellia tuberosa</td></tr>
+            <tr><td>112</td><td>Sedum nussbaumerianum</td></tr>
+            <tr><td>113</td><td>Selenicereus undatus</td></tr>
+            <tr><td>114</td><td>Spathiphyllum sp.</td></tr>
+            <tr><td>115</td><td>Sphagneticola trilobata</td></tr>
+            <tr><td>116</td><td>Sterculia alata</td></tr>
+            <tr><td>117</td><td>Sterlitzia reginae</td></tr>
+            <tr><td>118</td><td>Strobilanthes alternata</td></tr>
+            <tr><td>119</td><td>Tabernaemontana divaricata</td></tr>
+            <tr><td>120</td><td>Tecoma stans</td></tr>
+            <tr><td>121</td><td>Thuja orientalis</td></tr>
+            <tr><td>122</td><td>Tilia sp.</td></tr>
+            <tr><td>123</td><td>Tinospora cordifolia</td></tr>
+            <tr><td>124</td><td>Torenia fournieri</td></tr>
+            <tr><td>125</td><td>Tradescantia spathacea</td></tr>
+            <tr><td>126</td><td>Vitex negundo</td></tr>
+            <tr><td>127</td><td>Zamia furfuracea</td></tr>
+            <tr><td>128</td><td>Zephyranthes candida</td></tr>
+            <tr><td>129</td><td>Zephyranthes minuta</td></tr>
+            <tr><td>130</td><td>Zephyranthes rosea</td></tr>
+        </table>
+      </div>
+
+      <!-- Animals -->
+      <div class="tab-pane fade" id="animals" role="tabpanel">
+        <table>
+          <tr><th>#</th><th>Animal Species</th></tr>
+          <tr><td>1</td><td>Squirrel</td></tr>
+          <tr><td>2</td><td>Bonnet macaque</td></tr>
+          <tr><td>3</td><td>Large flying fox</td></tr>
+        </table>
+      </div>
+
+      <!-- Birds -->
+      <div class="tab-pane fade" id="birds" role="tabpanel">
+        <table>
+          <tr><th>#</th><th>Bird Species</th></tr>
+          <tr><td>1</td><td>Asian koel</td></tr>
+          <tr><td>2</td><td>Blue rock pigeon</td></tr>
+          <tr><td>3</td><td>Common crow</td></tr>
+          <tr><td>4</td><td>Common myna</td></tr>
+          <tr><td>5</td><td>Coppersmith barbet</td></tr>
+          <tr><td>6</td><td>Fantail</td></tr>
+          <tr><td>7</td><td>Golden oriole</td></tr>
+          <tr><td>8</td><td>House sparrow</td></tr>
+          <tr><td>9</td><td>Purple rumped sunbird</td></tr>
+          <tr><td>10</td><td>Purple sunbird</td></tr>
+          <tr><td>11</td><td>Red vented bulbul</td></tr>
+          <tr><td>12</td><td>Tailor bird</td></tr>
+          <tr><td>13</td><td>White throated kingfisher</td></tr>
+        </table>
+      </div>
+
+      <!-- Butterflies -->
+      <div class="tab-pane fade" id="butterflies" role="tabpanel">
+        <table>
+          <tr><th>#</th><th>Butterfly Species</th></tr>
+          <tr><td>1</td><td>Blue bottle butterfly</td></tr>
+          <tr><td>2</td><td>Common Jay butterfly</td></tr>
+          <tr><td>3</td><td>Common Mormon butterfly</td></tr>
+          <tr><td>4</td><td>Evening brown butterfly</td></tr>
+          <tr><td>5</td><td>Lime butterfly</td></tr>
+          <tr><td>6</td><td>Tailed Jay butterfly</td></tr>
+          <tr><td>7</td><td>Tiny blue butterfly</td></tr>
+          <tr><td>8</td><td>Common grass yellow</td></tr>
+          <tr><td>9</td><td>Blue Mormon</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div style="margin-top:25px;font-size:13px;color:#555;">
+      <i class="fa-solid fa-eye"></i> 2634 total views , 1 views today
+    </div><br/>
+    
+  </div> 
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Practices | R.J. College (Clone)</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    .page-container {
+      max-width: 1100px;
+      margin: 0px auto;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-container h1 {
+      color: #10207e;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .accordion-button {
+      background-color: #f6f9ff;
+      color: #10207e;
+      font-weight: 600;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: #fff;
+      background-color: #10207e;
+    }
+
+    .accordion-body {
+      line-height: 1.8;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    .view-count {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Breadcrumb -->
+ <section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+     <a href="../index.html" style="text-decoration:none;color:#0a58ca;">Home</a>
+      &nbsp; / &nbsp;<a href="#" style="text-decoration:none; color:#0a58ca;">Academics</a>
+      &nbsp; / &nbsp;<span style="color:#333;">Best Practices</span>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <div class="page-container">
+    <h1>Best Practices</h1>
+
+    <div class="accordion" id="bestPractices">
+
+      <!-- 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+            Annual Inter-Collegiate Training & Literacy for Library Support Staff
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To upgrade knowledge and technical literacy of library and office staff.<br>
+            <strong>Context:</strong> Many support staff need regular training to handle digital library software and e-resources.<br>
+            <strong>The Practice:</strong> Workshops and practical sessions conducted annually focusing on Koha, DSpace, and online databases.<br>
+            <strong>Evidence of Success:</strong> Improved efficiency and user satisfaction; faster cataloguing and issue process.<br>
+            <strong>Resources Required:</strong> ICT lab, library hall, computers, and external experts.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+            Open Hours for Students in Laboratories and Library Beyond Class Schedule
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To encourage self-learning and innovation among students.<br>
+            <strong>Context:</strong> Students often need extra time beyond class hours for project work and experiments.<br>
+            <strong>The Practice:</strong> Extended hours for library and laboratories till 7 PM; teacher mentorship during open hours.<br>
+            <strong>Evidence of Success:</strong> Notable improvement in research projects and innovation awards.<br>
+            <strong>Resources Required:</strong> Staff support, electricity, and maintenance resources.
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+            Strengthening Faculty Development Through Peer Learning
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To promote a culture of continuous professional growth among faculty.<br>
+            <strong>The Practice:</strong> “Each One Teach One” sessions where senior professors mentor junior faculty in ICT tools, research writing, and pedagogy.<br>
+            <strong>Evidence of Success:</strong> Faculty members published more papers and attended national FDPs.<br>
+            <strong>Resources Required:</strong> Smart classroom, projector, internet access.
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+            Student Engagement Through Project-Based Learning
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To bridge theory and real-world problem solving.<br>
+            <strong>The Practice:</strong> Students work on community or industry-linked projects evaluated by a panel.<br>
+            <strong>Evidence of Success:</strong> Many students received internships and start-up mentorship offers.<br>
+            <strong>Resources Required:</strong> Laboratories, software tools, and mentor support.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            Inclusion and Social Responsibility Initiatives
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To foster inclusivity and social empathy among students.<br>
+            <strong>The Practice:</strong> Regular outreach visits to NGOs, orphanages, and senior citizen homes.<br>
+            <strong>Evidence of Success:</strong> Students developed empathy and social awareness; improved NSS participation.<br>
+            <strong>Resources Required:</strong> Transportation, coordination with NGOs, and faculty involvement.
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            Enhancing Student Life Skills through Add-on Certificate Courses
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To prepare students for employability and entrepreneurship.<br>
+            <strong>The Practice:</strong> Certification programs in Communication Skills, Cyber Security, Data Analytics, and Yoga.<br>
+            <strong>Evidence of Success:</strong> Over 500 students completed at least one course annually.<br>
+            <strong>Resources Required:</strong> Expert trainers, labs, and online platforms.
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="bp7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+            Student Support and Progression
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#bestPractices">
+          <div class="accordion-body">
+            <strong>Objective:</strong> To ensure holistic student development.<br>
+            <strong>The Practice:</strong> Mentorship programs, remedial teaching, career counseling, and alumni networking.<br>
+            <strong>Evidence of Success:</strong> Improved retention rate and placement success.<br>
+            <strong>Resources Required:</strong> Counseling cell, mentor logs, alumni portal.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="view-count"><i class="fa-solid fa-eye"></i> 3221 total views , 2 views today</p>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

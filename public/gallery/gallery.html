@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery (2023 Onwards) | RJ College</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .about-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      margin: 0px auto;
+      max-width: 1100px;
+    }
+    h2, h3 {
+      color: #002147;
+      font-weight: 700;
+    }
+    table.gallery-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    .gallery-table th, .gallery-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-size: 0.95rem;
+    }
+    .gallery-table th {
+      background-color: #f4f6ff;
+      color: #003366;
+      text-transform: uppercase;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 6px;
+      transition: transform 0.2s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+    <a href="../index.html" style="text-decoration: none; color: #0a58ca">Home</a>
+      &nbsp; / &nbsp; <span style="color: #333">Gallery</span>
+    </div>
+  </section>
+
+  <div class="about-container">
+    <h1 style="color: #10207e;font-weight: 700;margin-bottom: 25px;">Photo Gallery (2023 Onwards)</h1>
+    <h4 class="mb-3">Photo Gallery 2023–24</h4>
+
+    <div class="table-responsive">
+      <table class="gallery-table">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Link to Album</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Experience the Magic of Music Beyond Sight – Musical Evening</td>
+                <td>30 Oct 2025</td>
+                <td><a href="https://photos.app.goo.gl/E3RNUhX8bACP224eA" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Confluence of Science and Culture Shri Vithal C Nadkarni</td>
+                <td>14 October 2025</td>
+                <td><a href="https://photos.app.goo.gl/nyxrZAcAYLbNtEUs6" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Felicitation Ceremony Hon. Shri. Hiten S. Venegavkar Additional Judge of The Bombay High Court</td>
+                <td>4 October 2025</td>
+                <td><a href="https://photos.app.goo.gl/v925UqditMPxQpxB6" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Annual Gymkhana Day – 2024-2025</td>
+                <td>27 September 2025</td>
+                <td><a href="https://photos.app.goo.gl/X9CgKrpUbboA4TiV6" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Annual Academic Prize Distribution Function 2024-25 Batch</td>
+                <td>16 Sep 2025</td>
+                <td><a href="https://photos.app.goo.gl/4HFG2RujdD6Mwgwj7" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Hindi Sahitya Parishad Hindi Divas Celebrations & Competitions</td>
+                <td>15 Sep 2025</td>
+                <td><a href="https://photos.app.goo.gl/7ULrFXtPuYE5AZxE7" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Marathi W. Mandal Katharang</td>
+                <td>10 Sep 2025</td>
+                <td><a href="#" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>HVPS 87th Foundation Day</td>
+                <td>16 Aug 2025</td>
+                <td><a href="https://photos.app.goo.gl/GyKJTyWpWeBR3rr9A" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>79th Independence Day Celebrations</td>
+                <td>15 Aug 2025</td>
+                <td><a href="https://photos.app.goo.gl/fskZkgefNcTrcLPQA" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Marathi Vidnyan Sammelan</td>
+                <td>2 Aug 2025</td>
+                <td><a href="https://photos.app.goo.gl/UEwrB3Hh5uRf7rqeA" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Workshop on Examination Reforms under Autonomy for Teaching & Non-Teaching Staff</td>
+                <td>31 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/wXQUggFtxdp7Sw8GA" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Career Fair – School Connect 2.0</td>
+                <td>25 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/pCRU4qEWqHrNhRX97" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Job Fair – Samarthanam Trust for the Disabled – Barclays – RJCollege</td>
+                <td>24 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/BFQyB1rfaF5cF4bB9" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Career Fair – School Connect 2.0</td>
+                <td>16 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/UQ19UiTGTSfJ26677" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Workshop on Capital Market by Department of Accountancy and Commerce</td>
+                <td>8–9 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/BFQyB1rfaF5cF4bB9" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Academic & Administrative Audit 2024-25</td>
+                <td>4 July 2025</td>
+                <td><a href="https://photos.app.goo.gl/MTJujpnmnb4iaeta8" target="_blank">Click Here</a></td>
+            </tr>
+            <tr>
+                <td>Orientation First Day of Academic Year 2025-26 Teachers</td>
+                <td>13 June 2025</td>
+                <td><a href="https://photos.app.goo.gl/CFB6fYqn6SHXLAxu5" target="_blank">Click Here</a></td>
+            </tr>
+            </tbody>
+
+      </table>
+    </div>
+
+    <h4 class="mt-4 mb-3">Highlights: Inclusive Job Fair (July 2024)</h4>
+    <div class="gallery-grid">
+      <img src="../assets/jobfair/jobFair1.jpg" alt="Job Fair Image 1">
+      <img src="../assets/jobfair/jobFair2.jpg" alt="Job Fair Image 2">
+      <img src="../assets/jobfair/jobFair3.jpg" alt="Job Fair Image 3">
+      <img src="../assets/jobfair/jobFair4.jpg" alt="Job Fair Image 4">
+      <img src="../assets/jobfair/jobFair5.jpg" alt="Job Fair Image 5">
+      <img src="../assets/jobfair/jobFair6.jpg" alt="Job Fair Image 6">
+      <img src="../assets/jobfair/jobFair7.jpg" alt="Job Fair Image 7">
+      <img src="../assets/jobfair/jobFair8.jpg" alt="Job Fair Image 8">
+
+    </div>
+
+    <h5 class="mt-5">More Events:</h5>
+    <ul>
+      <li>Book Exhibition (19–20 Dec 2023)</li>
+      <li>Reflections 2023 (21–22 Dec 2023)</li>
+      <li>RJ College NCC Unit Day (23 Dec 2023)</li>
+      <li>Annual Academic Prize Distribution Function (Dec 2023)</li>
+    </ul>
+
+    <p class="mt-4 text-muted"><small>📸 8286 total views • 2 views today</small></p>
+    
+    <!-- Footer -->
+  </div>
+    <div id="footer"></div>
+    
+
+  <script>
+    $(function(){
+      $("#navbar").load("../components/navbar.html");
+      $("#footer").load("../components/footer.html");
+    });
+  </script>
+</body>
+</html>

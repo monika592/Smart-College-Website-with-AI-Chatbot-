@@ -1,0 +1,153 @@
+{
+  "intents": [
+    {
+      "tag": "undergraduate_programs",
+      "patterns": [
+        "undergraduate programs",
+        "bachelor programs",
+        "bachelor degrees",
+        "bachelor courses",
+        "undergraduate courses",
+        "bachelor of science",
+        "bachelor of arts",
+        "bachelor of commerce",
+        "b.sc programs",
+        "b.a programs",
+        "b.com programs",
+        "what undergraduate programs",
+        "which undergraduate programs",
+        "list undergraduate programs",
+        "available undergraduate courses",
+        "bachelor degree options",
+        "ug programs",
+        "undergraduate degrees"
+      ],
+      "responses": [
+        "RJ College offers various undergraduate programs across multiple disciplines."
+      ]
+    },
+    {
+      "tag": "postgraduate_programs",
+      "patterns": [
+        "postgraduate programs",
+        "master programs",
+        "master degrees",
+        "postgraduate courses",
+        "master of science",
+        "master of arts",
+        "master of commerce",
+        "m.sc programs",
+        "m.a programs",
+        "m.com programs",
+        "what postgraduate programs",
+        "which postgraduate programs",
+        "list postgraduate programs",
+        "available postgraduate courses",
+        "master degree options",
+        "pg programs",
+        "postgraduate degrees"
+      ],
+      "responses": [
+        "The college offers postgraduate programs for advanced studies."
+      ]
+    },
+    {
+      "tag": "management_programs",
+      "patterns": [
+        "management programs",
+        "bms program",
+        "bba program",
+        "business management",
+        "management courses",
+        "business administration",
+        "bachelor of management",
+        "management studies",
+        "what management programs",
+        "which management courses",
+        "business programs",
+        "management degrees"
+      ],
+      "responses": [
+        "Management programs include BMS and BBA."
+      ]
+    },
+    {
+      "tag": "it_programs",
+      "patterns": [
+        "it programs",
+        "information technology programs",
+        "b.sc it",
+        "m.sc it",
+        "it courses",
+        "information technology courses",
+        "computer programs",
+        "what it programs",
+        "which it courses",
+        "it degree programs"
+      ],
+      "responses": [
+        "IT programs include B.Sc. IT and M.Sc. IT."
+      ]
+    },
+    {
+      "tag": "science_programs",
+      "patterns": [
+        "science programs",
+        "b.sc programs",
+        "m.sc programs",
+        "science courses",
+        "bachelor of science",
+        "master of science",
+        "what science programs",
+        "which science courses",
+        "science degrees"
+      ],
+      "responses": [
+        "Science programs include various B.Sc. and M.Sc. courses."
+      ]
+    },
+    {
+      "tag": "specific_bsc_it",
+      "patterns": [
+        "b.sc it",
+        "bsc it",
+        "bachelor of science in information technology",
+        "b.sc information technology",
+        "it bachelor degree",
+        "undergraduate it",
+        "bsc information technology"
+      ],
+      "responses": [
+        "B.Sc. IT is a 3-year undergraduate program in Information Technology."
+      ]
+    },
+    {
+      "tag": "specific_bba",
+      "patterns": [
+        "bba",
+        "bachelor of business administration",
+        "bba program",
+        "business administration",
+        "bba course",
+        "bba degree"
+      ],
+      "responses": [
+        "BBA is a 3-year undergraduate program in Business Administration."
+      ]
+    },
+    {
+      "tag": "specific_bms",
+      "patterns": [
+        "bms",
+        "bachelor of management studies",
+        "bms program",
+        "management studies",
+        "bms course",
+        "bms degree"
+      ],
+      "responses": [
+        "BMS is a 3-year undergraduate program in Management Studies."
+      ]
+    }
+  ]
+}

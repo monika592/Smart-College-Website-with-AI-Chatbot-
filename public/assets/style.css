@@ -1,0 +1,524 @@
+
+
+/* ========== Global Styles ========== */
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* To put the contents in a container */
+.page-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+  border: 1px solid #ddd;
+}
+
+
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+a:hover {
+    color: #0d6efd;
+}
+
+/* ========== Top Notice Bar ========== */
+.top-bar {
+    background-color: #0d1b4c;
+    color: #fff;
+    padding: 6px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.top-bar a {
+    color: #ffdd57;
+    font-weight: 600;
+}
+
+/* ========== Header ========== */
+/* ========== Header ========== */
+.header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  background-color: inherit; /* Let header-bg control background */
+}
+
+.header-bg {
+  background-color: #07125A; /* Deep Indigo */
+  color: #ffffff;
+}
+
+.header-bg h1,
+.header-bg p,
+.header-bg a,
+.header-bg li,
+.header-bg i,
+.header-bg .small-note {
+  color: #ffffff !important;
+}
+
+.header-bg a:hover {
+  color: #FFDD57; /* Soft Gold */
+  text-decoration: underline;
+}
+
+
+.header .logo img {
+  height: 70px;
+}
+
+.header .college-info {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.header .college-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header .college-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Optional: Link hover effect */
+
+/* ========== Navigation Bar ========== */
+.navbar {
+    background-color: #0d1b4c;
+    padding: 0;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+.navbar-nav li {
+    position: relative;
+}
+.navbar-nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-nav a:hover {
+    background-color: #004aad;
+    border-radius: 3px;
+}
+
+/* Exam Notice Bar Styling */
+.exam-notice-bar {
+  background-color: #ff9800;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid #ccc;
+}
+
+.exam-notice-bar .label {
+  background-color: #e68900;
+  color: white;
+  font-weight: bold;
+  padding: 6px 10px;
+  flex-shrink: 0;
+}
+
+.notice-ticker {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 28px;
+}
+
+.notice-ticker p {
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 100%;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    z-index: 999;
+}
+.dropdown-menu li a {
+    color: #333;
+    padding: 12px 15px;
+    display: block;
+}
+.navbar-nav li:hover > .dropdown-menu {
+    display: block;
+}
+
+/* ========== Notice Ticker ========== */
+.notice-bar {
+    background-color: #ffefc1;
+    color: #222;
+    padding: 8px 15px;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.notice-bar span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+}
+@keyframes ticker {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ========== Admission Tiles ========== */
+/* Admission 2025-26 Section */
+/* Admission 2025-26 Section */
+.admission-2025 {
+  background-color: #2A3F87; /* Royal Blue */
+  color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* Heading and paragraph */
+.admission-2025 h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.admission-2025 p {
+  color: #ffffff !important; /* Override Bootstrap's text-muted */
+  font-size: 14px;
+}
+
+/* Tile styling */
+.admission-2025 .tile {
+  background-color: #07125A; /* Deep Indigo */
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.admission-2025 .tile:hover {
+  background-color: #004AAD;
+  transform: translateY(-5px);
+}
+
+
+
+
+.tile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.tile:hover {
+    transform: translateY(-5px);
+}
+.tile button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #0d1b4c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tile button:hover {
+    background-color: #004aad;
+}
+
+
+
+/* ========== Footer ========== */
+.footer {
+    background-color: #0d1b4c;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.footer a {
+    color: #ffdd57;
+    margin: 0 8px;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Responsive Design ========== */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav a {
+        padding: 12px;
+    }
+    .admission-tiles {
+        grid-template-columns: 1fr;
+    }
+}
+/* Vertical Department Menu */
+.vertical-menu {
+  width: 250px;                  /* fixed width */
+  background-color: #007bff;     /* same as navbar blue */
+  border-radius: 0 0 6px 6px;
+  padding: 0;
+}
+
+.vertical-menu .dropdown-item {
+  color: #fff;
+  padding: 12px 16px;
+  font-weight: 500;
+}
+
+.vertical-menu .dropdown-item:hover {
+  background-color: #0056cc;
+  color: #fff;
+}
+/* Admission 2025-26 Section */
+/* Admission 2025-26 Section */
+section.admission-2025 h3 {
+  color:#0056a3;
+  border-left:4px solid #f36f21;
+  padding-left:10px;
+  font-weight:700;
+}
+
+section.admission-2025 .tile {
+  background-color:#e6f4ff !important;   /* force light blue */
+  color:#003366;
+  padding:18px;
+  border-radius:4px;
+  text-align:center;
+  font-weight:500;
+  font-size:15px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.1);
+  transition:transform .2s ease, background .2s ease;
+  cursor:pointer;
+}
+
+section.admission-2025 .tile:hover {
+  background-color:#d9eeff !important;   /* hover light blue */
+  transform:translateY(-2px);
+}
+
+section.admission-2025 .cta {
+  font-weight:700;
+}
+
+
+/* ------------------------------
+   Chatbot Floating Icon
+--------------------------------*/
+#chatbot-icon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+#chatbot-icon i {
+  font-size: 60px !important;
+}
+
+#chatbot-icon:hover {
+  background-color: #004aad;
+  transform: scale(1.15);
+}
+
+/* ------------------------------
+   Chatbot Box (Popup)
+--------------------------------*/
+#chatbot-box {
+  position: fixed;              /* ✅ fixed instead of absolute */
+  bottom: 150px;                /* ✅ appear just above icon */
+  right: 40px;                  /* ✅ align with icon */
+  width: 420px;                 /* ✅ larger size */
+  height: 550px;                /* ✅ larger size */
+  background: #fff;
+  border-radius: 16px;
+  display: none;                /* hidden by default */
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+}
+
+/* Header */
+#chatbot-header {
+  background: #0d6efd;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+#chatbot-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Messages */
+#chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  font-size: 15px;
+}
+
+/* Chat bubbles */
+.chatbot-msg {
+  margin: 8px 0;
+  padding: 8px 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user-msg {
+  background: #e7f1ff;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bot-msg {
+  background: #f1f1f1;
+  align-self: flex-start;
+}
+
+/* Input area */
+#chatbot-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatbot-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+#chatbot-send {
+  background: #0d6efd;
+  border: none;
+  color: white;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+/* ------------------------------
+   Responsive for Mobile
+--------------------------------*/
+@media (max-width: 600px) {
+  #chatbot-icon {
+    width: 70px;
+    height: 70px;
+    bottom: 25px;
+    right: 25px;
+  }
+
+  #chatbot-icon i {
+    font-size: 40px !important;
+  }
+
+  #chatbot-box {
+    width: 90%;
+    right: 5%;
+    height: 450px;
+    bottom: 100px;
+  }
+}
+
+#chatbot-messages {
+    display: flex;
+    flex-direction: column;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  .chatbot-msg {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  strong {
+    color: #0d6efd;
+  }

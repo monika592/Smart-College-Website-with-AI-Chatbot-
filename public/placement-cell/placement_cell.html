@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Placement Cell | R.J. College</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+
+  <style>
+    body { background:#f5f9ff; font-family: "Segoe UI", Roboto, Arial, sans-serif; color:#1b2733; }
+    .container-main { max-width:1100px; margin:0px auto; }
+    .card-page { background:#fff; padding:28px; border-radius:6px; box-shadow:0 6px 20px rgba(10,25,60,0.06); }
+    .page-title { color:#10207e; font-weight:700; font-size:26px; text-transform:uppercase; margin-bottom:12px; }
+    .intro { color:#333; line-height:1.7; margin-bottom:22px; }
+    .chart { max-width:420px; margin:18px 0 26px; border:1px solid #e8eefc; padding:14px; border-radius:6px; background:#fbfdff; }
+    .side-box { background:#f0f6ff; border:1px solid #e3eefc; padding:16px; border-radius:6px; margin-bottom:18px; }
+    .side-box h5 { color:#0a58ca; font-weight:700; margin-bottom:10px; font-size:16px; }
+    .placement-table { width:100%; border-collapse:collapse; font-size:14px; }
+    .placement-table th, .placement-table td { border:1px solid #e6eef9; padding:8px 10px; vertical-align:middle; }
+    .placement-table th { background:#f7fbff; color:#10207e; font-weight:700; font-size:13px; text-align:left; }
+    .small-muted { color:#6b7280; font-size:13px; }
+    .accordion .accordion-button { background:#f9fbff; color:#10207e; font-weight:600; }
+    .cta-note { margin-top:18px; font-size:13px; color:#444; }
+    .view-count { margin-top:14px; color:#555; font-size:13px; }
+    .table-responsive { border:1px solid #eef4ff; border-radius:6px; padding:6px; background:#fff; }
+    /* responsive tweaks */
+    @media (max-width:900px){
+      .chart{max-width:100%}
+    }
+    .placement-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.placement-container h1 {
+  color: #10207e;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+  .placement-container {
+    padding: 20px 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar loaded by your existing script -->
+  <div id="navbar-container"></div>
+
+  <!-- Breadcrumb -->
+  <section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+    <a href="../index.html" style="text-decoration:none;color:#0a58ca;">Home</a> 
+      &nbsp; / &nbsp;   <span style="color:#333;">Placement Cell</span>
+    </div>
+  </section>
+
+  <main class="placement-container" style="margin-top:30px;">
+  
+  <!-- === Top Section (Intro + Side News) === -->
+  <div class="row mb-4">
+    <!-- Left: Placement Info -->
+    <div class="col-lg-8">
+      <h1 style="color: #10207e;font-weight: 700;margin-bottom: 25px;">COLLEGE PLACEMENT CELL</h1>
+      <p>
+        Placement Cell in the R. J. College plays a vital role and is becoming a key department of the Institute.
+        As there are large numbers of colleges coming up, the competition for employment is increasing every day
+        and the job of placement is becoming a challenging one.
+      </p>
+      <ul>
+        <li><strong>“One Person One Job”</strong> - A candidate selected or one job is further restricted to other recruitment.</li>
+        <li>Backlisted Candidate Record</li>
+        <li>Career Fair VISTAS</li>
+        <li>Interpersonal and communication skills</li>
+        <li>Career planning and mapping</li>
+        <li>Program on Technology and Management</li>
+        <li>CV Writing, Group Discussion, Personal Interview</li>
+      </ul>
+      <div style="text-align: center;">
+        <img src="../assets/placement-chart.jpg" alt="Placement Chart" style="max-width:300px;margin-top:10px;border-radius:8px;">
+      </div>
+    </div>
+
+    <!-- Right: Campus Drive / Internship / Vacancies -->
+    <aside class="col-lg-4">
+      <div class="side-box">
+        <h5>Campus Drive News</h5>
+        <p style="margin-bottom:6px;">
+          <strong>Ultra Media & Entertainment Pvt. Ltd.:</strong><br>
+          WALK-IN DRIVE for Fresh Creative Graduates Aspiring for a Career in Graphic Designing! 🎨
+        </p>
+        <div style="text-align:right;">
+          <a href="placement_notices.html" class="btn btn-sm btn-primary" style="font-size:0.85rem;">View Notice</a>
+        </div>
+      </div>
+
+      <div class="side-box">
+        <h5>INTERNSHIP</h5>
+        <p>This section will give updates regarding internship opportunities for FY/SY/TY/MA/M.Sc./M.Com students.</p>
+        <div style="text-align:right;">
+          <a href="internship_section.html" class="btn btn-sm btn-primary" style="font-size:0.85rem;">View Notice</a>
+        </div>
+      </div>
+
+      <div class="side-box">
+        <h5>VACANCIES</h5>
+        <p>This section will give updates regarding various job opportunities for current & passed-out students.</p>
+        <div style="text-align:right;">
+          <a href="vacancies.html" class="btn btn-sm btn-primary" style="font-size:0.85rem;">View Notice</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <!-- End Top Section -->
+   
+
+        <h5 style="color:#10207e;margin-top:6px;margin-bottom:12px">List of Campus Placement</h5>
+
+        <div style="margin-top:18px">
+            <!-- Bootstrap Accordion for Placement Lists -->
+            <div class="accordion" id="placementAccordion">
+
+            <!-- Campus Placement 2022-23 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2023">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2023" aria-expanded="false" aria-controls="collapse2023">
+                    Campus Placement 2022-23
+                </button>
+                </h2>
+                <div id="collapse2023" class="accordion-collapse collapse" aria-labelledby="heading2023" data-bs-parent="#placementAccordion">
+                <div class="accordion-body">
+                    <!-- You can place your table here -->
+                     <div class="table-responsive">
+                    <table class="placement-table w-100">
+                        <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Name of the Student</th>
+                            <th>Program Completed</th>
+                            <th>Name of the Employer</th>
+                            <th>Pay Package at Appointment (INR)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Aditi Pachpute</td><td>TYBAF</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>2</td><td>Anam Ansari</td><td>TYBAF</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>3</td><td>Saurav Gupta</td><td>TYBMS</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>4</td><td>Chavan Kasturi Santosh Smita</td><td>TYBCOM</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>5</td><td>Ambika Maharana</td><td>TYBAF</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>6</td><td>Sahil Mishra</td><td>TYBAF</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>7</td><td>Sanjana Nayak</td><td>TYBAF</td><td>ICICI Prudential AMC (Mutual Funds)</td><td>3,25,000</td></tr>
+                            <tr><td>8</td><td>Hadawale Pravin Suresh Kavita</td><td>M.Sc Statistics-II</td><td>Acuite Ratings and Research</td><td>3,00,000</td></tr>
+                            <tr><td>9</td><td>Jayhind Prajapati</td><td>TYBSC CS</td><td>Alpha MD Private Limited</td><td>2,00,000</td></tr>
+                            <tr><td>10</td><td>Sakshi Gupta</td><td>TYBSC CS</td><td>Alpha MD Private Limited</td><td>2,00,000</td></tr>
+                            <tr><td>11</td><td>More Pradnya Hanmant Sangita</td><td>M.Sc Statistics-II</td><td>Avati Consulting Solutions Pvt. Ltd.</td><td>5,40,000</td></tr>
+                            <tr><td>12</td><td>Rahi Nikita Ramanand Reena</td><td>M.Sc Statistics-II</td><td>Axis Bank</td><td>7,50,000</td></tr>
+                            <tr><td>13</td><td>Shaikh Asma Abdulwaheed Shamim</td><td>M.Sc Statistics-II</td><td>BARC INDIA</td><td>7,00,000</td></tr>
+                            <tr><td>14</td><td>Chaurasia Anjali Anokhelal Mona Devi</td><td>M.Sc Statistics-II</td><td>Contexio</td><td>2,20,000</td></tr>
+                            <tr><td>15</td><td>Shivam Jaiswal</td><td>TYBSC CS</td><td>E&Y</td><td>4,90,000</td></tr>
+                            <tr><td>16</td><td>Pawar Rohan Shrikant Shaila</td><td>TYBSC IT</td><td>E&Y</td><td>4,90,000</td></tr>
+                            <tr><td>17</td><td>Shubham Pramod Singh</td><td>TYBSc Chemistry</td><td>E&Y</td><td>4,90,000</td></tr>
+                            <tr><td>18</td><td>Yadav Ashish Rajesh Malti</td><td>TYBSC IT</td><td>E&Y</td><td>4,90,000</td></tr>
+                            <tr><td>19</td><td>Ajit Singh</td><td>TYBCOM</td><td>EbixCash Global Services</td><td>1,80,000</td></tr>
+                            <tr><td>20</td><td>Rai Anuj Kedar Aruna</td><td>M.Sc Statistics-II</td><td>Gallagher Re</td><td>8,00,000</td></tr>
+                            <tr><td>21</td><td>Shabnam Anuar Sakkeena</td><td>M.Sc Statistics-II</td><td>Gallagher Re</td><td>8,00,000</td></tr>
+                            <tr><td>22</td><td>Yadav Arun Nandlal Manorama</td><td>M.Sc Statistics-II</td><td>Gallagher Re</td><td>8,00,000</td></tr>
+                            <tr><td>23</td><td>Rana Ashishkumar Arjun Shantidevi</td><td>M.Sc Statistics-II</td><td>General Mills</td><td>6,00,000</td></tr>
+                            <tr><td>24</td><td>Vishvakarma Jitendrakumar Arjun Sarasvati</td><td>M.Sc Statistics-II</td><td>Great Manager Institute</td><td>6,00,000</td></tr>
+                            <tr><td>25</td><td>Pednekar Akshata Anil Anuradha</td><td>M.Sc Statistics-II</td><td>Hansa Cequity</td><td>4,50,000</td></tr>
+                            <tr><td>26</td><td>Sawant Pallavi Pratap Priyanka</td><td>M.Sc Statistics-II</td><td>Hansa Cequity</td><td>4,00,000</td></tr>
+                            <tr><td>27</td><td>Chauhan Jaisingh Vijaypratap Gauri</td><td>M.Sc Statistics-II</td><td>HDFC Bank</td><td>10,20,000</td></tr>
+                            <tr><td>28</td><td>Sharma Roshan Ramnaresh Shobha</td><td>M.Sc Statistics-II</td><td>HDFC Bank</td><td>12,41,000</td></tr>
+                            <tr><td>29</td><td>Chudji Sawant Krutika Vijay Sneha</td><td>M.Sc Statistics-II</td><td>HDFC Bank</td><td>12,40,000</td></tr>
+                            <tr><td>30</td><td>Upadhyay Shubham Mukeshchandra Guddidevi</td><td>M.Sc Statistics-II</td><td>Impact Guru</td><td>4,30,000</td></tr>
+                            <tr><td>31</td><td>Yadav Bipul Phoolchand Ritadevi</td><td>M.Sc Statistics-II</td><td>In-Solutions Global</td><td>3,60,000</td></tr>
+                            <tr><td>32</td><td>Boyewar Swapnil Sangram Laxmi</td><td>M.Sc Statistics-II</td><td>Kantar</td><td>7,00,000</td></tr>
+                            <tr><td>33</td><td>Laxmi Jaiswal</td><td>TYBCOM</td><td>Kotal Life Insurance</td><td>2,50,000</td></tr>
+                            <tr><td>34</td><td>Mansi Pandey</td><td>TYBAF</td><td>Kotal Life Insurance</td><td>2,50,000</td></tr>
+                            <tr><td>35</td><td>Yadav Neeraj Ramjeet Vimala</td><td>TYBCOM</td><td>Kotal Life Insurance</td><td>2,50,000</td></tr>
+                            <tr><td>36</td><td>Gowda Shivprasad Raju Latha</td><td>TYBMS</td><td>Motilal Oswal Financial Services Ltd.</td><td>1,20,000</td></tr>
+                            <tr><td>37</td><td>Suratran Shubham Sandeep Rupali</td><td>M.Sc Statistics-II</td><td>Muthoot Exim Pvt. Ltd.</td><td>2,40,000</td></tr>
+                            <tr><td>38</td><td>Pillai Aryamol Ramachandran Priya</td><td>M.Sc Statistics-II</td><td>Nielsen IQ</td><td>8,00,000</td></tr>
+                            <tr><td>39</td><td>Bandopadhyay Amruta Mukti</td><td>M.Sc Statistics-II</td><td>NielsenIQ</td><td>7,50,000</td></tr>
+                            <tr><td>40</td><td>Kokitkar Sayali Pandurang Vaijayanta</td><td>M.Sc Statistics-II</td><td>NielsenIQ</td><td>7,50,000</td></tr>
+                            <tr><td>41</td><td>Malviya Ritika Jitendra Ranjana J. Malviya</td><td>M.Sc Statistics-II</td><td>NielsenIQ</td><td>7,50,000</td></tr>
+                            <tr><td>42</td><td>Khopade Akshada Sudhir Savita</td><td>M.Sc Statistics-II</td><td>PMpas</td><td>4,80,000</td></tr>
+                            <tr><td>43</td><td>Shukla Kunal Ashok Chanchal</td><td>TYBSC IT</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>44</td><td>Dubey Prince Ajit Neelam</td><td>TYBSC IT</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>45</td><td>Rajnish Pathak</td><td>TYBSC IT</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>46</td><td>Gupta Soni Satyanarayan Rekha</td><td>M.Sc DSAI-II</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>47</td><td>Tiwari Shivani Divakar Ritadevi</td><td>M.Sc DSAI-II</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>48</td><td>Vishwajeet Yadav</td><td>M.Sc IT-II</td><td>RSM Astute Consulting Pvt. Ltd.</td><td>3,90,800</td></tr>
+                            <tr><td>49</td><td>Kunal Singh</td><td>TYBSC IT</td><td>Silverlink Technologies Pvt. Ltd.</td><td>414</td></tr>
+                            <tr><td>50</td><td>Aman Tiwari</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>51</td><td>Anchal Kanoujiya</td><td>TYBBI</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>52</td><td>Ankita Omprakash Yadav</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>53</td><td>Ayush Shailendra Tripathi</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>54</td><td>Yadav Bandana Ajay Kumar</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>55</td><td>Gupta Karishma Indrajeet Manju</td><td>TYBSc Zoology</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>56</td><td>Ishwari Shailendra Shinde</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>57</td><td>Jyoti Yadav</td><td>TYBBI</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>58</td><td>Gupta Khushi</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>59</td><td>Sharma Komal Jaiprakash</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>60</td><td>Niyaz Ahmed Iftekhar Ahmed Shaikh</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>61</td><td>Pandey Sachin Virendrakumar</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>62</td><td>Ansari Rehmat Ali Jalim</td><td>TYBSC CS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>63</td><td>Sagar Munshilal Chauhan</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>64</td><td>Saif Husain</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>65</td><td>Sakshi Shekhar Ahire</td><td>TYBBI</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>66</td><td>Sakshi Pradeep Mishra</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>67</td><td>Sandhya Rajendra Pandey</td><td>TYBBI</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>68</td><td>Gupta Sarita Brahmaprasad</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>69</td><td>Shahista Shakir Shaikh</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>70</td><td>Muskan Shaikh</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>71</td><td>Shivam Brijlal Yadav</td><td>TYBSc Chemistry</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>72</td><td>Nidhi Siddhnath Yadav</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>73</td><td>Ujala Dilip Yadav</td><td>TYBAF</td><td>Sutherland</td><td>1,80,000</td></tr>
+                            <tr><td>74</td><td>Yadav Sanjay Samarjeet Surjadevi</td><td>TYBSC CS</td><td>Systenics</td><td>3,25,000</td></tr>
+                            <tr><td>75</td><td>Amrita Dinesh Singh</td><td>TYBAF</td><td>Tata AMC</td><td>4,00,000</td></tr>
+                            <tr><td>76</td><td>Gupta Anjali Dineshchandra Heeramati</td><td>TYBCOM</td><td>TCS</td><td>2,40,000</td></tr>
+                            <tr><td>77</td><td>Sonar Nandini Nagendra Anita</td><td>TYBAF</td><td>TCS</td><td>2,40,000</td></tr>
+                            <tr><td>78</td><td>Singh Satyam Rakeshpratap Madhuri</td><td>TYBBI</td><td>TCS</td><td>2,40,000</td></tr>
+                            <tr><td>79</td><td>Singh Shreya Anand Reeta Devi</td><td>TYBCOM</td><td>TCS</td><td>2,40,000</td></tr>
+                            <tr><td>80</td><td>Singh Shivanshu Rajesh Renu</td><td>TYBBI</td><td>TCS</td><td>2,40,000</td></tr>
+                            <tr><td>81</td><td>Mishra Amit Kumar Girish Chandra Yogmaya</td><td>TYBSC IT</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Campus Placement 2021-22 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2022">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2022" aria-expanded="false" aria-controls="collapse2022">
+                    Campus Placement 2021-22
+                </button>
+                </h2>
+                <div id="collapse2022" class="accordion-collapse collapse" aria-labelledby="heading2022" data-bs-parent="#placementAccordion">
+                <div class="accordion-body">
+                    <!-- Your table for 2021-22 -->
+                     <div class="table-responsive">
+                    <table class="placement-table w-100">
+                        <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Name of the Student</th>
+                            <th>Program Completed</th>
+                            <th>Name of the Employer</th>
+                            <th>Pay Package at Appointment (INR)</th>
+                        </tr>
+                        </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Bhatt Kirte Umesh Beena</td><td>TYBSC IT</td><td>Jio Platforms Limited</td><td>2,24,355</td></tr>
+                                <tr><td>2</td><td>Dubey Sakshi Rakesh Vandana</td><td>TYBSC CS</td><td>Jio Platforms Limited</td><td>2,24,355</td></tr>
+                                <tr><td>3</td><td>Puradkar Gaurangi Ganesh Kavita</td><td>TYBSC CS</td><td>Jio Platforms Limited</td><td>2,24,355</td></tr>
+                                <tr><td>4</td><td>Udupa Amritha Ganapathi Nirmala</td><td>TYBSC CS</td><td>Jio Platforms Limited</td><td>2,24,355</td></tr>
+                                <tr><td>5</td><td>Singh Komal Ranjeet Geeta</td><td>TYBSC IT</td><td>Alpha MD</td><td>3,00,000</td></tr>
+                                <tr><td>6</td><td>Gaud Priya Lalmohan Godavari</td><td>TYBSC IT</td><td>Alpha MD</td><td>3,00,000</td></tr>
+                                <tr><td>7</td><td>Sawant Maithily Sudhir Manali</td><td>TYBSC CS</td><td>Capgemini</td><td>2,56,440</td></tr>
+                                <tr><td>8</td><td>Shukla Himanshu Shashikant Pratima</td><td>TYBSC CS</td><td>Datamatics</td><td>3,00,000</td></tr>
+                                <tr><td>9</td><td>Sharma Nirali Sanjivkumar Poonamdevi</td><td>TYBSC IT</td><td>Datamatics</td><td>3,00,000</td></tr>
+                                <tr><td>10</td><td>Shaikh Mohd Naved Abdul Bari Afroz</td><td>TYBSC IT</td><td>Datamatics</td><td>3,00,000</td></tr>
+                                <tr><td>11</td><td>Gurav Omkar Arjun Aparana</td><td>TYBSC CS</td><td>Hexaware Technologies Ltd.</td><td>3,00,000</td></tr>
+                                <tr><td>12</td><td>Gupta Rupeshkumar Gangaprasad Gayatri</td><td>TYBSC CS</td><td>Hexaware Technologies Ltd.</td><td>3,00,000</td></tr>
+                                <tr><td>13</td><td>Gupta Abhishek Lalji Vandana</td><td>TYBSC CS</td><td>ICICI Prudential Life Insurance</td><td>3,36,000</td></tr>
+                                <tr><td>14</td><td>Chaubey Akanksha Chandramani Aruna</td><td>TYBSC CS</td><td>L&T Infotech</td><td>3,14,000</td></tr>
+                                <tr><td>15</td><td>Maral Sejal Mahesh Maheshwari</td><td>TYBSC IT</td><td>L&T Infotech</td><td>3,14,000</td></tr>
+                                <tr><td>16</td><td>Mishra Saurabh Devendra Mithilesh Devi</td><td>TYBSC IT</td><td>L&T Infotech</td><td>3,14,000</td></tr>
+                                <tr><td>17</td><td>Tiwari Aanchal Prakash Archanadevi</td><td>TYBSC CS</td><td>Qualitykiosk Technologies Pvt. Ltd.</td><td>2,25,730</td></tr>
+                                <tr><td>18</td><td>Tripathi Minal Durgesh Sunita</td><td>TYBSC IT</td><td>Qualitykiosk Technologies Pvt. Ltd.</td><td>2,25,730</td></tr>
+                                <tr><td>19</td><td>Yadav Rahul Samar Bahadur Savita</td><td>TYBSC CS</td><td>Qualitykiosk Technologies Pvt. Ltd.</td><td>2,25,730</td></tr>
+                                <tr><td>20</td><td>Chourasiya Kunal Ajay Surekha</td><td>TYBAF</td><td>Qx Global</td><td>3,12,000</td></tr>
+                                <tr><td>21</td><td>Walunj Kaustoobh Nitin Vaishali</td><td>TYBMS</td><td>Qx Global</td><td>3,12,000</td></tr>
+                                <tr><td>22</td><td>Kushwaha Jayashri Subhash Niraj</td><td>TYBBI</td><td>Qx Global</td><td>3,12,000</td></tr>
+                                <tr><td>23</td><td>Mishra Suchi Shyamsundar Meera</td><td>TYBCOM</td><td>Qx Global</td><td>3,12,000</td></tr>
+                                <tr><td>24</td><td>Yadav Bebi Ramashankar Ramawati</td><td>TYBSC IT</td><td>TCS</td><td>1,90,926</td></tr>
+                                <tr><td>25</td><td>Sayali Nitin Jadhav</td><td>TYBSC CS</td><td>TCS</td><td>1,90,926</td></tr>
+                                <tr><td>26</td><td>Patwa Shalini Pawan Kumar Pushpa</td><td>M.Sc CS - II</td><td>TCS</td><td>1,90,926</td></tr>
+                                <tr><td>27</td><td>Vishwakarma Arvind Lalchand Gyankumari</td><td>TYBSC IT</td><td>Ugam Solutions Pvt. Ltd.</td><td>3,20,000</td></tr>
+                                <tr><td>28</td><td>Maurya Kavita Indrajeet Shashikala</td><td>TYBSC CS</td><td>Ugam Solutions Pvt. Ltd.</td><td>3,20,000</td></tr>
+                                <tr><td>29</td><td>Shinde Mrinmayee Mangesh Vrishali</td><td>TYBSC CS</td><td>Ugam Solutions Pvt. Ltd.</td><td>3,20,000</td></tr>
+                                <tr><td>30</td><td>Singh Monika Kumari Kamalendu Singh Ramita Devi</td><td>TYBSC IT</td><td>Wipro</td><td>1,85,856</td></tr>
+                                <tr><td>31</td><td>Upadhyay Ashish Devendra Manju</td><td>TYBSC IT</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                                <tr><td>32</td><td>Jaiswar Suryakant Ramashray Ashadevi</td><td>TYBSC CS</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                                <tr><td>33</td><td>Saroj Manasi Bhagwanprasad Chandadevi</td><td>TYBSC IT</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                                <tr><td>34</td><td>Tiwari Shruti Akhilesh Kumar Seema</td><td>TYBSC IT</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                                <tr><td>35</td><td>Singh Ashwinikumar Mukteshwar Puneeta</td><td>TYBSC CS</td><td>Wipro Ltd</td><td>1,85,856</td></tr>
+                                <tr><td>36</td><td>Gupta Shubham Sanjay Parvathi</td><td>TYBSC CS</td><td>Ugam Solutions Pvt. Ltd.</td><td>3,20,000</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Campus Placement 2020-21 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2021">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2021" aria-expanded="false" aria-controls="collapse2021">
+                    Campus Placement 2020-21
+                </button>
+                </h2>
+                <div id="collapse2021" class="accordion-collapse collapse" aria-labelledby="heading2021" data-bs-parent="#placementAccordion">
+                <div class="accordion-body">
+                    <!-- Your table for 2020-21 -->
+                     <div class="table-responsive">
+                    <table class="placement-table w-100">
+                        <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Name of the Student</th>
+                            <th>Program Completed</th>
+                            <th>Name of the Employer</th>
+                            <th>Pay Package at Appointment (INR)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1</td><td>Inamdar Simran Allabakas</td><td>TYBSC CS</td><td>Hexaware Technologies</td><td>3,00,000</td></tr>
+                        <tr><td>2</td><td>Suchi Shrikrishna Mishra</td><td>TYBSC IT</td><td>Hexaware Technologies</td><td>3,00,000</td></tr>
+                        <tr><td>3</td><td>Atulkumar Mishra</td><td>TYBSc</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>4</td><td>Divyansh Dubey</td><td>TYBSc</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>5</td><td>Swati Kori</td><td>TYBCOM</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>6</td><td>Pragati Shrivastav</td><td>TYBA</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>7</td><td>Pravin Sharma</td><td>TYBSc</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>8</td><td>Priyanka Prajapati</td><td>TYBSc</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>9</td><td>Sahil Shrivastav</td><td>TYBCOM</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>10</td><td>Nikita Yadav</td><td>TYBBI</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>11</td><td>Sonu Tiwari</td><td>TYBCOM</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>12</td><td>Tanvi Maurya</td><td>TYBCOM</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>13</td><td>Shivani Tiwari</td><td>TYBMS</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>14</td><td>Aneri Mehta</td><td>TYBSc</td><td>ICICI Prudential Life Insurance Co. Ltd.</td><td>2,65,000</td></tr>
+                        <tr><td>15</td><td>Anjali Tiwari</td><td>TYBCOM</td><td>IDBI</td><td>3,48,000</td></tr>
+                        <tr><td>16</td><td>Garima Trivedi</td><td>TYBCOM</td><td>IDBI</td><td>3,48,000</td></tr>
+                        <tr><td>17</td><td>Mansi Mishra</td><td>TYBCOM</td><td>IDBI</td><td>3,48,000</td></tr>
+                        <tr><td>18</td><td>Sonu Radheshyam Tiwari</td><td>TYBCOM</td><td>Ikea</td><td>4,13,004</td></tr>
+                        <tr><td>19</td><td>Ankita Keshavkumar Chaurasia</td><td>TYBCOM</td><td>Ikea</td><td>3,43,922</td></tr>
+                        <tr><td>20</td><td>Nibedita Nityananda Biswas</td><td>TYBCOM</td><td>Ikea</td><td>4,13,004</td></tr>
+                        <tr><td>21</td><td>Vivek Jagadish Yadav</td><td>TYBCOM</td><td>Ikea</td><td>3,77,930</td></tr>
+                        <tr><td>22</td><td>Abhishek Mishra</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>23</td><td>Gupta Priyanshu Rajesh</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>24</td><td>Mishra Rohit Sureshchandra</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>25</td><td>Panda Dipti Rani Janardana</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>26</td><td>Pathak Shubham Ramesh</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>27</td><td>Yadav Sunilkumar Rajbahadur</td><td>TYBSC CS</td><td>Infosys Pvt. Ltd.</td><td>2,22,972</td></tr>
+                        <tr><td>28</td><td>Chahat Singh</td><td>TYBSC IT</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>29</td><td>Mishra Diksha Santoshkumar Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>30</td><td>Ketan Rawat</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>31</td><td>Malusare Nikita Vilas Pratima</td><td>TYBSC IT</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>32</td><td>Jadhav Pallavi Dashrath Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>33</td><td>Sachin Pandey</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>34</td><td>Singh Prashant Bhupendra Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>35</td><td>Singh Preeti Brajesh Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>36</td><td>Roy Abhijit Atin Pratima</td><td>TYBSC IT</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>37</td><td>Shetty Shilpa Sudarshan Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>38</td><td>Ekta Anand Shukla</td><td>TYBSC IT</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>39</td><td>Singh Bhavesh Jitendra</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>40</td><td>Yadav Bipeenkumar Rajdeo Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>41</td><td>Sawant Yash Suresh Pratima</td><td>TYBSC IT</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>42</td><td>Yadav Ayush Virendra Pratima</td><td>TYBSC CS</td><td>L&T Infotech</td><td>2,26,000</td></tr>
+                        <tr><td>43</td><td>Pereira Madonna Felix</td><td>TYBCOM</td><td>Qx Global</td><td>3,12,000</td></tr>
+                        <tr><td>44</td><td>Vishwakarma Nitesh Kamlesh</td><td>TYBMS</td><td>Qx Global</td><td>3,12,000</td></tr>
+                        <tr><td>45</td><td>Mishra Sahil Rajesh</td><td>TYBCOM</td><td>Qx Global</td><td>3,12,000</td></tr>
+                        <tr><td>46</td><td>Vishal Vishwakarma</td><td>TYBMS</td><td>Qx Global</td><td>3,12,000</td></tr>
+                        <tr><td>47</td><td>Akhil Singh</td><td>TYBSc</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>48</td><td>Mehta Aneri</td><td>TYBSc</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>49</td><td>Bisoyi Anjali</td><td>TYBSc</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>50</td><td>Shrivastav Khushi</td><td>TYBSc</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>51</td><td>Mishra Ankit</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>52</td><td>Naina Singh</td><td>TYBA</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>53</td><td>Neligonda Paul</td><td>TYBSc</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>54</td><td>Qureshi Shabnam</td><td>TYBCOM</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>55</td><td>Shaikh Rahemin</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>56</td><td>Mishra Snehal</td><td>TYBMS</td><td>Sutherland</td><td>1,80,000</td></tr>
+                        <tr><td>57</td><td>Mishra Suchindra Chandrashekhar</td><td>TYBSC CS</td><td>TATA Consultancy Services</td><td>1,90,926</td></tr>
+                        <tr><td>58</td><td>Nikhil Dubey</td><td>TYBSC IT</td><td>Wipro</td><td>1,85,856</td></tr>
+                        <tr><td>59</td><td>Vishwakarma Vikas Jayanti Bimladevi</td><td>TYBSC IT</td><td>Wipro</td><td>1,85,856</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Campus Placement 2019-20 (and earlier) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2019">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2019" aria-expanded="false" aria-controls="collapse2019">
+                    Campus Placement 2019-20 (and earlier)
+                </button>
+                </h2>
+                <div id="collapse2019" class="accordion-collapse collapse" aria-labelledby="heading2019" data-bs-parent="#placementAccordion">
+                <div class="accordion-body">
+                    <!-- Your table for 2019-20 -->
+                     <div class="table-responsive">
+                    <table class="placement-table w-100">
+                        <thead>
+                        <tr>
+                            <th>Sr. No</th>
+                            <th>Name of the Student</th>
+                            <th>Program Completed</th>
+                            <th>Name of the Employer</th>
+                            <th>Pay Package at Appointment (INR)</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>1</td><td>Akshay Subhash Gupta</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>2</td><td>Annapurna Narottam Chandela</td><td>TYBSC IT</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>3</td><td>Sundari Ramsurat Maurya</td><td>TYBSC IT</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>4</td><td>Gauri Rajendra Deokar</td><td>TYBSC IT</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>5</td><td>Abhishek Shukla</td><td>TYBSC IT</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>6</td><td>Khan Muskaan Irfan Ahmed</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>7</td><td>Pramod Balkrushna Powar</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>8</td><td>Sagar Khot</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>9</td><td>Saurabh Jilajeeet Upadhyay</td><td>—</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>10</td><td>Sapna Ram Avtar Yadav</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>11</td><td>Siddhesh Chandrahas Polekar</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>12</td><td>Sonal Jayprakash Yadav</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>13</td><td>Suraj Mahadev Nigade</td><td>TYBSC CS</td><td>Capgemini</td><td>2,50,000</td></tr>
+                        <tr><td>14</td><td>Gudulkar Susmita Shridhar Smita</td><td>M.Sc Botany-II</td><td>HUL</td><td>9,31,488</td></tr>
+                        <tr><td>15</td><td>Ameet Rajendra Pandey</td><td>TYBBI</td><td>ICICI Prudential Life</td><td>2,65,000</td></tr>
+                        <tr><td>16</td><td>Archana Jagdambaprasad Shukla</td><td>TYBBI</td><td>ICICI Prudential Life</td><td>2,65,000</td></tr>
+                        <tr><td>17</td><td>Pravin Pramod Sahani</td><td>TYBBI</td><td>ICICI Prudential Life</td><td>2,65,000</td></tr>
+                        <tr><td>18</td><td>Gupta Ketar Shyamsundar</td><td>TYBBI</td><td>ICICI Prudential Life</td><td>2,65,000</td></tr>
+                        <tr><td>19</td><td>Sarika Naresh Shrimali</td><td>TYBBI</td><td>ICICI Prudential Life</td><td>2,65,000</td></tr>
+                        <tr><td>20</td><td>Shaunakji Satyanand Mishra</td><td>TYBSC IT</td><td>Infosys</td><td>2,22,972</td></tr>
+                        <tr><td>21</td><td>Supriya Shahaji Kapse</td><td>TYBSC IT</td><td>Infosys</td><td>2,22,972</td></tr>
+                        <tr><td>22</td><td>Aashish Godse</td><td>TYBSC CS</td><td>L&T Infotech</td><td>1,80,000</td></tr>
+                        <tr><td>23</td><td>Sahil Momin</td><td>TYBSC CS</td><td>L&T Infotech</td><td>1,80,000</td></tr>
+                        <tr><td>24</td><td>Shivam Singh</td><td>TYBSC IT</td><td>L&T Infotech</td><td>1,80,000</td></tr>
+                        <tr><td>25</td><td>Yogesh More</td><td>TYBSC CS</td><td>L&T Infotech</td><td>1,80,000</td></tr>
+                        <tr><td>26</td><td>Manisha Mohan Sharma</td><td>TYBCOM</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>27</td><td>Neelam Vijayshankar Chaurasiya</td><td>TYBBI</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>28</td><td>Omkar Rajkumar Bhardwaj</td><td>TYBCOM</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>29</td><td>Shreya Na Pal</td><td>TYBCOM</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>30</td><td>Madina Jafar Sayyed</td><td>TYBCOM</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>31</td><td>Smit Deepak Ujal</td><td>TYBMS</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>32</td><td>Sooraj Bhaskar Poojary</td><td>TYBMS</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>33</td><td>Sumit Anil Jha</td><td>TYBCOM</td><td>Qx Global Service</td><td>3,12,000</td></tr>
+                        <tr><td>34</td><td>Abhishek Vidyanand Rai</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>35</td><td>Abuzar Mahibullah Shaikh</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>36</td><td>Ajay Anant Lad</td><td>TYBSC CS</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>37</td><td>Pratiksha Dnyaneshwar Amup</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>38</td><td>Aniket Vijay Dhoke</td><td>TYBSC CS</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>39</td><td>Anjali Shailesh Kushwaha</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>40</td><td>Apurva Ravindra Kelkar</td><td>TYBSc Botany</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>41</td><td>Athira Manoj Adiparambil</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>42</td><td>Manish Gyanchand Gupta</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>43</td><td>Harshada Chhapan Shinde</td><td>TYBSc Biotechnology</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>44</td><td>Krishna Mohan Chaudhary</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>45</td><td>Preeti Rakesh Mishra</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>46</td><td>Shubham Dattaram More</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>47</td><td>Nidhi Baijnath Vishwakarma</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>48</td><td>Onkar Abhay Kanitkar</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>49</td><td>Pooja Swarajya Malik</td><td>TYBMS</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>50</td><td>Pragati Bholanath Mishra</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>51</td><td>Preeti Indrabahadur Soni</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>52</td><td>Priya Jitendra Singh</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>53</td><td>Priya Dinesh Yadav</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>54</td><td>Rachita Ganesh Kokku</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>55</td><td>Rani Rajesh Gupta</td><td>TYBBI</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>56</td><td>Sachin Basudeb Baditya</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>57</td><td>Saher Salim Shaikh</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>58</td><td>Sangya Pramod Soni</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>59</td><td>Sanjana Gopal Yadav</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>60</td><td>Satish Kumar Gupta</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>61</td><td>Sandeep Rajkumar Prajapati</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>62</td><td>Sourabh Suresh Dukare</td><td>TYBCOM</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>63</td><td>Akash Dinesh Vishwakarma</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>64</td><td>Venkatesh Ganesh Vellar</td><td>TYBVOC FMS</td><td>TCS</td><td>1,65,000</td></tr>
+                        <tr><td>65</td><td>Viral Mahendra Dodhia</td><td>TYBSC IT</td><td>TCS</td><td>1,65,000</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+          
+        <!-- ===== Placement Registration Portal (Powered by Pod.ai) ===== -->
+        <div class="cta-note" style="background:#f5f9ff;border-left:5px solid #10207e;padding:20px 25px;border-radius:6px;margin-top:30px;">
+        <h5 style="color:#10207e;margin-bottom:8px;">Placement Registration Portal <small>(Powered by Pod.ai)</small></h5>
+        <p style="color:#444;margin-bottom:10px;">
+            All students who wish to participate in campus placements must register through the official <strong>Placement Registration Portal</strong>. 
+            Please read the following instructions carefully before registration.
+        </p>
+
+        <p style="margin-top:12px;">
+            👉 <strong>First-time Registration:</strong> 
+            Click the button below to access the registration page:
+        </p>
+
+        <a href="https://rjcollege.pod.ai/" target="_blank" style="display:inline-block;background:#10207e;color:#fff;padding:10px 20px;border-radius:4px;text-decoration:none;font-weight:600;margin:8px 0;">
+            Go to Placement Registration Portal
+        </a>
+
+        <p style="margin:10px 0;color:#444;">
+            You will see the registration screen. Follow these steps carefully:
+        </p>
+
+        <ol style="margin-left:20px;color:#444;line-height:1.6;">
+            <li>Enter your <strong>First Name</strong>, <strong>Middle Name</strong>, and <strong>Last Name</strong>.</li>
+            <li>Provide a <strong>valid active email address</strong>. A confirmation mail will be sent to this email ID.</li>
+            <li>In the <strong>Enrollment No.</strong> field, enter your <strong>College Roll Number</strong>.</li>
+            <li>In the <strong>Course Completion Year</strong> field — for example, if you are in TYBSc (2023–24), select <strong>2024</strong>.</li>
+            <li>Select your <strong>Course</strong> and click <strong>Sign Up</strong>.</li>
+            <li>After submitting, you will receive a confirmation email with an activation link. Click it to activate your account.</li>
+            <li>Once activated, log in to the portal using your registered email and password at 
+            <a href="https://rjcollege.pod.ai/" target="_blank" style="color:#10207e;text-decoration:underline;">https://rjcollege.pod.ai/</a>.
+            </li>
+            <li>After logging in, complete your profile — fill in your <strong>personal details, academic records</strong>, and upload your <strong>latest resume (PDF)</strong>.</li>
+            <li>You will then be able to view all upcoming placement news and register for company drives through this portal.</li>
+        </ol>
+
+        <p style="color:#d00000;font-weight:600;margin-top:12px;">⚠️ Last date for Registration: <strong>15 October 2023</strong></p>
+
+        <p style="margin-top:10px;color:#444;">
+            For technical or login issues, contact: 
+            <a href="mailto:placement@rjcollege.edu.in" style="color:#10207e;text-decoration:underline;">placement@rjcollege.edu.in</a>
+        </p>
+        </div>
+
+
+        <div class="view-count">
+          <i class="fa-solid fa-eye"></i> 29124 total views , 2 views today
+        </div><br/>
+      </div>
+    </div>
+    
+  </main>  
+    <!-- Footer loaded by your existing script -->
+    <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js">
+    // If your site loads navbar/footer via JS, they will render in the divs above.
+    // Add any page-specific JS here if needed.
+  </script>
+</body>
+</html>

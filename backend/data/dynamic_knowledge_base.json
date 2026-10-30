@@ -1,0 +1,50 @@
+{
+  "dynamicKnowledgeBase": [
+    {
+      "question": "WHAT IS INDIA",
+      "answer": "COUNTRY",
+      "category": "general",
+      "timestamp": "2025-11-09T15:59:24.435Z",
+      "usageCount": 9,
+      "lastUsed": "2025-11-11T17:47:22.478Z"
+    },
+    {
+      "question": "what is cat",
+      "answer": "animal",
+      "category": "general",
+      "timestamp": "2025-11-10T03:46:08.544Z",
+      "usageCount": 2,
+      "lastUsed": "2025-11-11T17:46:22.157Z"
+    },
+    {
+      "question": "who is the head of it",
+      "answer": "Mrs. Archana Bhide",
+      "category": "general",
+      "timestamp": "2025-11-10T03:50:26.190Z",
+      "usageCount": 3,
+      "lastUsed": "2025-11-11T17:45:58.939Z"
+    },
+    {
+      "question": "is apple is fruit",
+      "answer": "yes",
+      "category": "general",
+      "timestamp": "2025-11-10T04:07:33.631Z",
+      "usageCount": 1,
+      "lastUsed": "2025-11-10T04:07:51.047Z"
+    },
+    {
+      "question": "nearest mall to rj college",
+      "answer": "The nearest major mall to Ramniranjan Jhunjhunwala College (R J College) is R City Mall in Ghatkopar West.",
+      "category": "general",
+      "timestamp": "2025-11-10T06:42:26.169Z",
+      "usageCount": 2,
+      "lastUsed": "2025-11-11T17:47:31.118Z"
+    }
+  ],
+  "usageStats": {
+    "totalQueries": 7,
+    "dynamicAnswersUsed": 5,
+    "lastUpdated": "2025-11-11T17:45:01.822Z"
+  },
+  "lastSaved": "2025-11-11T17:47:31.118Z"
+}

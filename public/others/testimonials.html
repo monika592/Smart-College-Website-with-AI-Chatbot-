@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | R.J. College</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body { background:#f5f9ff; font-family:"Segoe UI", Roboto, Arial, sans-serif; color:#1b2733; }
+    .testimonial-container {
+      max-width:1100px;
+      margin:0px auto;
+      background:#fff;
+      padding:30px 25px;
+      border-radius:6px;
+      box-shadow:0 0 6px rgba(0,0,0,0.1);
+    }
+    .testimonial-container h1 {
+      color:#10207e;
+      font-weight:700;
+      text-align:start;
+      margin-bottom:25px;
+      text-transform:uppercase;
+    }
+    .testimonial-card {
+      background:#e9f0ff;
+      border-radius:8px;
+      padding:20px;
+      text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.05);
+      transition:transform 0.3s ease;
+    }
+    .testimonial-card:hover {
+      transform:translateY(-5px);
+    }
+    .testimonial-card img {
+      width:90px;
+      height:90px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:15px;
+      border:3px solid #10207e25;
+    }
+    .testimonial-name {
+      color:#10207e;
+      font-weight:600;
+      font-size:16px;
+      margin-bottom:3px;
+    }
+    .testimonial-role {
+      color:#555;
+      font-size:14px;
+      margin-bottom:10px;
+    }
+    .testimonial-text {
+      font-size:14px;
+      line-height:1.7;
+      color:#333;
+      text-align:justify;
+      margin-bottom:10px;
+    }
+    .testimonial-quote {
+      color:#004aad;
+      font-style:italic;
+      font-size:28px;
+      line-height:0;
+    }
+    .testimonial-rating i {
+      color:#f7c71d;
+    }
+    /* .slide-up { opacity:0; transform:translateY(40px); transition:all 0.8s ease-out; } */
+    .slide-up.show { opacity:1; transform:translateY(0); }
+    @media (max-width:768px){ .testimonial-container{padding:20px 15px;} }
+/* Stylish Filter Buttons */
+  .testimonial-card {
+  background: #f6f9ff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.testimonial-card img {
+  width: 95px;
+  height: 130px;
+  border-radius: 25%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #10207e;
+}
+.testimonial-quote {
+  font-size: 22px;
+  color: #10207e;
+  margin-bottom: 10px;
+}
+.testimonial-text {
+  font-size: 15px;
+  color: #333;
+  text-align: justify;
+  min-height: 120px;
+}
+.testimonial-name {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #10207e;
+}
+.testimonial-role {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.testimonial-rating i {
+  color: #fbb034;
+}
+
+  .filter-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .filter-btn {
+    background: #e8ecff;
+    color: #10207e;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .filter-btn:hover {
+    background: #10207e;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(16, 32, 126, 0.25);
+  }
+
+  .filter-btn.active {
+    background: #10207e;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(16, 32, 126, 0.25);
+  }
+
+  .testimonial-section {
+    background: #f5f9ff;
+  }
+
+  .testimonial-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+
+}
+
+
+  .card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar-container"></div>
+
+  <!-- Breadcrumb -->
+<section style="padding:0; font-size:0.9rem;">
+  <div style="max-width:1100px; margin:0 auto; padding:15px 15px; background-color:#f0f4ff; border-bottom:1px solid #ccc; box-sizing:border-box;">
+    <a href="../index.html" style="text-decoration:none;color:#0a58ca;">Home</a>
+      &nbsp;/&nbsp; <span style="color:#333;">Testimonials</span>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="testimonial-container">
+    <h1 class="slide-up">Student Testimonials</h1>
+
+    <section class="testimonial-section py-5">
+    <div class="container">
+    <!-- Filter Buttons -->
+    <div class="text-center mb-5 filter-btn-group">
+      <button class="filter-btn active" data-filter="all">Show All</button>
+      <button class="filter-btn" data-filter="zoology">Zoology</button>
+      <button class="filter-btn" data-filter="biotech">Biotechnology</button>
+      <button class="filter-btn" data-filter="physics">Physics</button>
+      <button class="filter-btn" data-filter="marathi">Marathi</button>
+      <button class="filter-btn" data-filter="hindi">Hindi</button>
+      <button class="filter-btn" data-filter="english">English</button>
+      <button class="filter-btn" data-filter="math">Mathematics</button>
+      <button class="filter-btn" data-filter="commerce">Commerce</button>
+      <button class="filter-btn" data-filter="guest">Guest</button>
+      <button class="filter-btn" data-filter="history">History</button>
+      <button class="filter-btn" data-filter="bVoc">B.Voc</button>
+      <button class="filter-btn" data-filter="botany">Botany</button>
+    </div>
+
+    <!-- Testimonial Cards -->
+     <div class="row gy-4">
+      <!-- Example Testimonial Card -->
+      <!-- Biotechnology Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Dr_Debarchana_Saha.jpg" alt="Dr Debarchana Saha">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I am very proud to be part of RJ alumnus and grateful to the wonderful teachers of RJBT who mentored us because of where I am. 
+            The lab facilities which we received at even UG level was phenomenal. 
+            And at every stage of our education we received strong support and guidance.
+          </p>
+          <div class="testimonial-name">Dr. Debarchana Saha</div>
+          <div class="testimonial-role">Application Scientist, Altona Diagnostics India Pvt. Ltd.</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Dr._Indrabahadur_Singh.jpg" alt="Dr Indrabahadur Singh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I had a great experience studying at RJ. It gave me an opportunity to understand what I really want to do and how to get it.
+          </p>
+          <div class="testimonial-name">Dr. Indrabahadur Singh</div>
+          <div class="testimonial-role">Emmy Noether Group Leader, German Cancer Research Center</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Dr._Sagar_Utturkar.jpg" alt="Dr Sagar Utturkar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ Biotech established an educational foundation for my career by providing domain expertise in biotechnology. 
+            RJ biotech provided excellent education, encouraged real-world experiences through workshops and internships 
+            and help was always available when needed. I very much admire the cognitive environment and skill-development 
+            opportunities I received at RJ biotech and helped to accomplish my educational and professional goals and build 
+            stepping stones for my career as a scientist.
+          </p>
+          <div class="testimonial-name">Dr. Sagar Utturkar</div>
+          <div class="testimonial-role">Senior Scientist, University of Tennessee, USA</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Avinash_Mishra.jpg" alt="Mr Avinash Mishra">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College is a reputed and well-renowned college for Biotechnology across India. Its strength is its strong faculty and 
+            their great zeal to mentor their students. Many passouts from this department are doing well in healthcare, research, and other domains. 
+            Like others, I too feel privileged that I was part of RJ College.
+          </p>
+          <div class="testimonial-name">Mr. Avinash Mishra</div>
+          <div class="testimonial-role">Territory Business Executive, Novartis Healthcare Pvt. Ltd.</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Ram_Mudaliar.jpg" alt="Mr Ram Mudaliar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Faculty members were knowledgeable and provided the right level of guidance to ensure I was on the right path 
+            and had an enriching time during my college days.
+          </p>
+          <div class="testimonial-name">Mr. Ram Mudaliar</div>
+          <div class="testimonial-role">Head of Clinical Data & Insights, AstraZeneca India</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marathi Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/archana.jpg" alt="डॉ. अर्चना कुडतरकर">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            “११ वीला कला शाखेत प्रवेश घेतला आणि इथली कधी झाले ते कळलंच नाही. शिकणं, अभ्यास करणं अंगात भिनलं ते इथेच. 
+            नियमित सगळ्या विषयांचे होणारे तास आणि तळमळीने शिकवणारे शिक्षक ही माझ्या महाविद्यालयातली फार महत्त्वाची बाब मला आजही वाटते. 
+            इथल्या सगळ्या आठवणी आजही मनात ताज्या आहेत.”
+          </p>
+          <div class="testimonial-name">डॉ. अर्चना कुडतरकर</div>
+          <div class="testimonial-role">शिक्षणविवेक मासिकात कार्यकारी संपादक</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/nilam.jpg" alt="निलम जीवन सकपाळ">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            ‘रामनिरंजन झुनझुनवाला महाविद्यालय’ आणि त्यातला ‘मराठी विभाग’ ह्या माझ्या आयुष्यातल्या अतिशय महत्त्वाच्या गोष्टी आहेत. 
+            शालेय शिक्षण मराठी माध्यमातून पूर्ण केलेल्या माझ्यासारख्या विद्यार्थ्यांना ह्या महाविद्यालयाने खूप चांगल्या पद्धतीने घडवले आहे.
+          </p>
+          <div class="testimonial-name">निलम जीवन सकपाळ</div>
+          <div class="testimonial-role">नाट्य प्रशिक्षक, ऑर्किड्स इंटरनॅशनल स्कूल</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/vitthal.jpg" alt="ऍड. विठ्ठल यदू कांबळे">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            २००५ साली रामनिरंजन झुनझुनवाला महाविद्यालयात मी प्रवेश घेतला. 
+            कला शाखेचा विद्यार्थी असल्याने मला नृत्य, अभिनय यासारख्या कलेत पारंगत होण्याची संधी मिळाली. 
+            मराठी विभागाच्या प्रमुखांच्या योग्य मार्गदर्शनामुळे मी उच्चशिक्षित झालो आणि आज विधी अधिकारी म्हणून कार्यरत आहे.
+          </p>
+          <div class="testimonial-name">ऍड. विठ्ठल यदू कांबळे</div>
+          <div class="testimonial-role">विधी अधिकारी, मोतीलाल ओस्वाल ग्रुपमधे</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/ganesh.jpg" alt="श्री. गणेश गाडगे">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            जेव्हा केव्हा मला एखाद्या महाविद्यालयाजवळून जाण्याचा प्रसंग येतो, तेव्हा तेव्हा मला माझ्या रामनिरंजन झुनझुनवाला महाविद्यालयाची आठवण येते. 
+            मी आज जर आयुष्यात यशस्वी झालो असेन तर हे केवळ मला इथे मिळालेल्या शिक्षणामुळेच.
+          </p>
+          <div class="testimonial-name">श्री. गणेश गाडगे</div>
+          <div class="testimonial-role">विमा अभिकर्ता, भारतीय जीवन बीमा निगम</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marathi Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/kiran.jpg" alt="किरण यादव">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            महाविद्यालयाविषयीचा अनुभव एका वाक्यात सांगायचं तर “पुन्हा ते दिन येणे नाही” असंच मी म्हणेन. 
+            मी खरोखरीच स्वतःला भाग्यवान समजतो की मला असं कॉलेज, उत्कृष्ट शिक्षकवृंद गुरु स्थानी लाभले. 
+            तो काळ, ती माणसं माझ्यासाठी मला आयुष्यभर पुरेल एवढी ज्ञानाची, प्रेमाची शिदोरी आहेत हे नक्की.
+          </p>
+          <div class="testimonial-name">किरण यादव</div>
+          <div class="testimonial-role">डिझायनर लीड, एमआरसीसी आईटी सोल्युशन ठाणे</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="marathi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/sarika.jpg" alt="सारिका राजेश ढेरंगे">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मी बारावी सायन्स ची विद्यार्थिनी होते पण माझा लिखाणाकडे कल असल्यामुळे मी कलाशाखेत मराठी विषय घेतला होता. 
+            त्यामुळे अनेक साहित्यिक मला अभ्यासता आले. कॉलेजने मला खूप छान मित्र-मैत्रिणी दिले आणि झुनझुनवाला कॉलेजमध्ये माझं शिक्षण पूर्ण झालं हीच माझ्यासाठी अभिमानाची गोष्ट आहे.
+          </p>
+          <div class="testimonial-name">सारिका राजेश ढेरंगे</div>
+          <div class="testimonial-role">फ्री लान्स लेखक – कविता, कथा, लेख लेखन</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindi Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="hindi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Sufiya_Mohd_Qamar_Shaikh.jpg" alt="Sufiya Mohd Qamar Shaikh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मैं सुफिया शेख़, रामनिरंजन झुनझुनवाला महाविद्यालय में 2019 से 2021 एम.ए. हिंदी की छात्रा रही। 
+            प्राध्यापकों का निरंतर सहकार्य और पुस्तकालय की उत्तम सुविधा से मुझे हमेशा प्रेरणा मिली। 
+            आज मैं डॉन बॉस्को डेवलपमेंट सोसाइटी में हिन्दी अध्यापिका के रूप में कार्यरत हूं।
+          </p>
+          <div class="testimonial-name">Sufiya Mohd Qamar Shaikh</div>
+          <div class="testimonial-role">Assistant Teacher, Don Bosco Development Society MGL</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="hindi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Pooja_Rajesh_Chaudhary.jpg" alt="Pooja Rajesh Chaudhary">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मैंने रामनिरंजन झुनझुनवाला महाविद्यालय से पोस्ट-ग्रेजुएशन किया। 
+            हिंदी विभाग ने मुझे जीवन में सक्रियता और प्रेरणा दी। 
+            आज मैं मदर तेरेसा विद्यालय में हिंदी अध्यापिका के रूप में कार्यरत हूं और अपने गुरूजनों की प्रेरणा से यह संभव हुआ।
+          </p>
+          <div class="testimonial-name">Pooja Rajesh Chaudhary</div>
+          <div class="testimonial-role">Assistant Teacher, Mother Theresa School</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="hindi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Pragya_Singh.jpg" alt="Pragya Singh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मैं 2019 से 2021 तक इस महाविद्यालय की छात्रा रही। 
+            शिक्षकों से मिला सहयोग और प्रेरणा ने मेरे कैरियर की दिशा तय की। 
+            ऐसा हमारा महाविद्यालय परिवार है जहाँ शिक्षा के साथ संस्कार भी मिलते हैं।
+          </p>
+          <div class="testimonial-name">Pragya Singh</div>
+          <div class="testimonial-role">Senior Author, eSense Learning (Navneet Publication)</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="hindi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Yadav_Usha_Ramvilas.jpg" alt="Yadav Usha Ramvilas">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मेरा इस महाविद्यालय के साथ 7 वर्षों का सफर रहा है। 
+            11वीं से लेकर स्नातकोत्तर तक की पढ़ाई पूरी की। 
+            सकारात्मक वातावरण और सहायक शिक्षक-शिक्षिकाओं ने मेरे कौशल को विकसित करने के अनेक अवसर दिए।
+          </p>
+          <div class="testimonial-name">Yadav Usha Ramvilas</div>
+          <div class="testimonial-role">Assistant Teacher, VISHWAJYOT HIGH SCHOOL</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hindi Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="hindi">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Jyoti_Karande.jpg" alt="Jyoti Karande">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            मैं ज्योति कारंडे, रामनिरंजन झुनझुनवाला महाविद्यालय में वर्ष 2019 से 2021, एम.ए. हिंदी की छात्रा रही।
+            मेरा अनुभव इस महाविद्यालय के साथ बहुत ही अच्छा रहा। कोविड-19 महामारी के दौरान भी पूर्ण सहकार्य मिला।
+            आज मैं कोहिनूर इंटरनेशनल विद्यालय में हिंदी अध्यापिका के रूप में कार्यरत हूँ और इस महाविद्यालय की सदैव आभारी हूँ।
+          </p>
+          <div class="testimonial-name">Jyoti Karande</div>
+          <div class="testimonial-role">Hindi Teacher, Kohinoor International School</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- English Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="english">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Akhil_Nair.jpg" alt="Akhil Nair">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I became a part of RJ college in 2014 and stayed on for five long years. 
+            My professors and peers, especially from the English department, gave me direction and purpose.
+            The MA English Literature course broadened my perspective on life and literature.
+          </p>
+          <div class="testimonial-name">Akhil Nair</div>
+          <div class="testimonial-role">Assistant Content Manager, Inkwood Research</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="english">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Annu_Upadhyay.jpg" alt="Annu Upadhyay">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            It gives me great pleasure to say with pride that I completed my MA from RJ College.
+            The cordial relationship between faculty and students helped me excel both personally and professionally.
+            The support from RJ faculty made it possible to manage work and study successfully.
+          </p>
+          <div class="testimonial-name">Annu Upadhyay</div>
+          <div class="testimonial-role">Regional Training Manager, Aditya Birla Finance Limited</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="english">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Gynel_Pereira.jpg" alt="Gynel Pereira">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My MA Literature journey at RJ College was transformative. 
+            Professors like Neeta Ma’am, Maria Ma’am, and Yogesh Sir brought literature to life.
+            Their dedication and motivation inspired me both as a student and teacher.
+          </p>
+          <div class="testimonial-name">Gynel Pereira</div>
+          <div class="testimonial-role">Assistant Teacher (English Language and Literature), Bombay Scottish School</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="english">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/NIDA_JAFFER.jpg" alt="Nida Jaffer">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Returning to academics after years was daunting, but the kindness and mentorship of Dr. Neeta and Maria Ma’am made it possible.
+            The MA English program helped me regain confidence, build professionalism, and cherish lifelong learning.
+          </p>
+          <div class="testimonial-name">Nida Jaffer</div>
+          <div class="testimonial-role">MA English Alumni (2019-2021)</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="english">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Robin_Lal.jpg" alt="Robin Lal">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My experience as a student at RJ College turned out to be the best.
+            The guidance and warmth of my teachers inspired me to become an educator myself.
+            I’ll always be thankful to Jhunjhunwala College and proud to be an alumnus.
+          </p>
+          <div class="testimonial-name">Robin Lal</div>
+          <div class="testimonial-role">Assistant Teacher, Michael High School & Jr College (Kurla-West)</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mathematics Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="mathematics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Narpat_Puri.jpg" alt="Mr. Narpat Puri">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I completed my B.Sc. Mathematics in 2000 from RJ College. 
+            The interpersonal skills and confidence gained here shaped my career and personal growth. 
+            I owe a lot of my success to the guidance of my teachers.
+          </p>
+          <div class="testimonial-name">Mr. Narpat Puri</div>
+          <div class="testimonial-role">Project Leader, NEC Corporation India Pvt. Ltd.</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="mathematics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Chandrashekhar_Marudrappa_Kubyal.jpg" alt="Mr. Chandrashekhar Marudrappa Kubyal">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I entered RJ College on a wheelchair in 1989 and graduated with BSc Math in 1994. 
+            The guidance from my teachers built my confidence and helped me grow to an international level.
+          </p>
+          <div class="testimonial-name">Mr. Chandrashekhar Marudrappa Kubyal</div>
+          <div class="testimonial-role">Associate Consultant, Tata Consultancy Services (Toronto, Canada)</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="mathematics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Jagannath_Mane.jpg" alt="Mr. Jagannath Mane">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Graduating in Mathematics in 2000 from RJ College gave me the foundation for a global career.
+            The professors’ guidance not only shaped my academics but also my personal and professional success.
+          </p>
+          <div class="testimonial-name">Mr. Jagannath Mane</div>
+          <div class="testimonial-role">Senior Business Analyst / Project Manager, Latitude Financial Services</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="mathematics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mr._Vijay_Jairam_Mirgal.jpeg" alt="Mr. Vijay Jairam Mirgal">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College provided an environment of warmth and guidance. 
+            The Department of Mathematics inspired me to pursue teaching as a career.
+            I owe my professional growth to my alma mater.
+          </p>
+          <div class="testimonial-name">Mr. Vijay Jairam Mirgal</div>
+          <div class="testimonial-role">Principal, Pawar Public School, Chandivali</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="mathematics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Ms._Nandini_Ajay_Rai.jpg" alt="Ms. Nandini Ajay Rai">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I graduated from RJ College in 2003 with a B.Sc. Mathematics and earned a gold medal in my Masters.
+            RJ nurtured my communication, adaptability, and empathy — qualities that shaped my teaching career.
+          </p>
+          <div class="testimonial-name">Ms. Nandini Ajay Rai</div>
+          <div class="testimonial-role">Assistant Professor, K.J. Somaiya College, Vidyavihar</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visitors -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="visitors">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Dr._Kapil_Khullar.jpg" alt="Dr. Kapil Khullar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Inspiring to see what Jhunjhunwala College and Dr. Usha Mukundan have done in the field of education,
+            especially for students from very humble backgrounds.
+          </p>
+          <div class="testimonial-name">Dr. Kapil Khullar</div>
+          <div class="testimonial-role">Sr. Director, Thermo Fischer Scientific, Mumbai</div>
+          <small>Date of Visit: 17 Mar 2022</small>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="visitors">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Shri._Jagannarayan_Padmanabhan.jpg" alt="Shri. Jagannarayan Padmanabhan">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            It was a pleasure to interact with the magnificent teachers and students. Very enthusiastic and eager to learn.
+            The campus is wonderful and poised to reach great heights under their guidance.
+          </p>
+          <div class="testimonial-name">Shri. Jagannarayan Padmanabhan</div>
+          <div class="testimonial-role">Practice Leader & Director - Transport and Logistics, CRISIL Limited</div>
+          <small>Date of Visit: 23 Feb 2022</small>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="visitors">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Narendra_Chirmule.jpg" alt="Narendra Chirmule">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Extremely delighted and nostalgic to be back ‘Home’ to my college.
+          </p>
+          <div class="testimonial-name">Narendra Chirmule</div>
+          <div class="testimonial-role">Chief Executive Officer, SymphonyTech Biologics</div>
+          <small>Date of Visit: 23 Feb 2022</small>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biotechnology -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Naushaba_Qureshi.jpg" alt="Naushaba Qureshi">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College shaped me into who I am today. The faculty’s genuine care and passion for teaching gave me a lasting love for Biotechnology and Research.
+            Today, I’m proud to be a Lecturer at the same college that nurtured me.
+          </p>
+          <div class="testimonial-name">Naushaba Qureshi</div>
+          <div class="testimonial-role">Lecturer, RJ College</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- History -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="history">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Jitesh_Ghagh.jpg" alt="Jitesh Ghagh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Switching from science to humanities was the best decision I made. RJ College helped me discover my love for History and languages, leading me to a career in travel and writing.
+          </p>
+          <div class="testimonial-name">Jitesh Ghagh</div>
+          <div class="testimonial-role">Copyeditor & Content Writer, Marketing Dept., Veena World</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="history">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Ms._Darshana_Buch.jpg" alt="Ms. Darshana Buch">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My passion for History was ignited at RJ College and led me to pursue a Ph.D. in Culinary History.
+            I am proud to serve as an Assistant Professor and alumni member of the Board of Studies.
+          </p>
+          <div class="testimonial-name">Ms. Darshana Buch</div>
+          <div class="testimonial-role">Assistant Professor, Smt. M.M.P. Shah Women’s College</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="history">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Chandani_Singh.png" alt="Chandani Singh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College gave me multidimensional learning and confidence to interact professionally. 
+            Professors Meher Madam and Anagha Madam inspired me to grow beyond my comfort zone.
+          </p>
+          <div class="testimonial-name">Chandani Singh</div>
+          <div class="testimonial-role">Deputy Manager, NPCI</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- B.Voc -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="bvoc">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Asha_Rana.jpg" alt="Asha Rana">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Entering RJ was one of the best things to happen in my life. 
+            The faculty helped me develop interpersonal and leadership skills through guidance and co-curricular activities.
+          </p>
+          <div class="testimonial-name">Asha Rana</div>
+          <div class="testimonial-role">Associate, Oracle Financial Services Software Ltd</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="bvoc">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Shivani.jpg" alt="Shivani">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Proud to be an RJite! The vocational course helped me grow and achieve success with guidance from our amazing faculty, especially Soni Ma’am.
+          </p>
+          <div class="testimonial-name">Shivani</div>
+          <div class="testimonial-role">Assistant Manager, Xanadu Realty</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="bvoc">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mahesh_Pandey.jpg" alt="Mahesh Pandey">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College encouraged me to pursue new skills and grow. 
+            The support from Soni Ma’am and Usha Ma’am made my academic years unforgettable.
+          </p>
+          <div class="testimonial-name">Mahesh Pandey</div>
+          <div class="testimonial-role">Technical Support Specialist, Concentrix</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="bvoc">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Sahil_Shaikh.jpg" alt="Sahil Shaikh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My college journey transformed me completely — from an introvert to an operations analyst.
+            RJ College taught me communication, management, and confidence for the corporate world.
+          </p>
+          <div class="testimonial-name">Sahil Shaikh</div>
+          <div class="testimonial-role">Operations Analyst, Blenheim Chalcot</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="bvoc">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Brijesh.jpg" alt="Brijesh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My journey at RJ College was transformative. 
+            The B.Voc Department focused on career enhancement and personal growth through academics and activities.
+          </p>
+          <div class="testimonial-name">Brijesh</div>
+          <div class="testimonial-role">Senior Analyst, Situs AMC</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botany -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Kripal_Sengupta.jpg" alt="Kripal Sengupta">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ Botany Department believed in me when others didn’t. 
+            Their encouragement transformed me from a struggling student to a confident professional.
+          </p>
+          <div class="testimonial-name">Kripal Sengupta</div>
+          <div class="testimonial-role">Actor & Film Director</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Ameya_Amberkar.jpg" alt="Ameya Amberkar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            The quality teaching and simplified methods inspired me to help students appreciate plant sciences.
+            RJ College made me a better teacher.
+          </p>
+          <div class="testimonial-name">Ameya Amberkar</div>
+          <div class="testimonial-role">Teacher, Dept. of Biology, RJ College (Junior)</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Pranali_Pradakshine.jpg" alt="Pranali Pradakshine">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Botany faculty at RJ College guided me at every step, shaping my career path and giving me lifelong inspiration.
+          </p>
+          <div class="testimonial-name">Pranali Pradakshine</div>
+          <div class="testimonial-role">Sr. Centralized Monitor, IQVIA</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Susmita_Shridhar_Gudulkar.jpg" alt="Susmita Shridhar Gudulkar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Department of Botany encouraged me to participate in research and competitions,
+            increasing my confidence and fulfilling my research ambitions.
+          </p>
+          <div class="testimonial-name">Susmita Shridhar Gudulkar</div>
+          <div class="testimonial-role">R & D Associate, Hindustan Unilever</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Sapna_Dinanath_Pandey.jpg" alt="Sapna Dinanath Pandey">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College made me wiser and more aware of the world around me. 
+            The experience was transformative and enlightening.
+          </p>
+          <div class="testimonial-name">Sapna Dinanath Pandey</div>
+          <div class="testimonial-role">Advocate</div>
+          <div class="testimonial-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botany Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Ashish_V._Singh.jpg" alt="Ashish V. Singh">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Got to learn from the Department heads like Usha Ma’am on how to prioritise my objectives.
+            Learnings like these are still helpful in daily work.
+          </p>
+          <div class="testimonial-name">Ashish V. Singh</div>
+          <div class="testimonial-role">Executive, Digital Media</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Niraj_Patil.jpg" alt="Niraj Patil">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Botany Department helped me develop management and problem-solving skills
+            through engaging projects during my academic journey.
+          </p>
+          <div class="testimonial-name">Niraj Patil</div>
+          <div class="testimonial-role">Sr. Technical Product Manager (Associate Vice President)</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Khan_Fayzan_Mushir_Ahmed.jpg" alt="Khan Fayzan Mushir Ahmed">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College gave me the direction and foundation to pursue further studies and shape my career.
+          </p>
+          <div class="testimonial-name">Khan Fayzan Mushir Ahmed</div>
+          <div class="testimonial-role">Lawyer</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Purushottam_Gopalkrishna_Kale.jpg" alt="Purushottam Gopalkrishna Kale">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College gave me immense confidence that stayed with me throughout my professional life.
+          </p>
+          <div class="testimonial-name">Purushottam Gopalkrishna Kale</div>
+          <div class="testimonial-role">Former HOD, Dept. of Zoology, RJ College</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Lokendra_Prasad_Ojha.jpg" alt="Lokendra Prasad Ojha">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Participation in “Botanica” helped me gain confidence in presenting myself.
+          </p>
+          <div class="testimonial-name">Lokendra Prasad Ojha</div>
+          <div class="testimonial-role">Sales Manager</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Menka_Gavhane.jpg  " alt="Menka Gavhane">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            The mentoring, research values, and life skills coaching under Usha Ma’am helped
+            me prepare for responsibilities in leadership roles.
+          </p>
+          <div class="testimonial-name">Menka Gavhane</div>
+          <div class="testimonial-role">Associate Director, Clinical Operations</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Mugdha_Ambatkar-Kamat.jpg" alt="Mugdha Ambatkar-Kamat">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            I obtained my Ph.D through this department. My current enterprise involves plants and plant-based products.
+          </p>
+          <div class="testimonial-name">Mugdha Ambatkar-Kamat</div>
+          <div class="testimonial-role">Entrepreneur</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="botany">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Dr._Sanchita_Sanjib_Chaudhuri.jpg" alt="Dr. Sanchita Sanjib Chaudhuri">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My teachers equipped me with the required theoretical and practical knowledge,
+            and also made me a better person.
+          </p>
+          <div class="testimonial-name">Dr. Sanchita Sanjib Chaudhuri</div>
+          <div class="testimonial-role">Assistant Professor in Botany</div>
+        </div>
+      </div>
+
+      <!-- Zoology Alumni -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="zoology">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Siddhesh_Sitaram_Bhor.jpg" alt="Siddhesh Sitaram Bhor">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ Zoology teachers transformed me from a student to a wildlife researcher.
+            NSS volunteering and leadership experiences added immense value.
+          </p>
+          <div class="testimonial-name">Siddhesh Sitaram Bhor</div>
+          <div class="testimonial-role">Junior Research Biologist, SACON</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="zoology">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Gauri_Sanjeet_Nadkarni.png" alt="Gauri Sanjeet Nadkarni">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College helped me evolve as a complete human being and face challenges in life confidently.
+          </p>
+          <div class="testimonial-name">Gauri Sanjeet Nadkarni</div>
+          <div class="testimonial-role">Assistant Project Coordinator, Surmount Energy Solutions</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="zoology">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Abhishek_Kumar_Maurya.png" alt="Abhishek Kumar Maurya">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College shaped my academic and leadership journey.
+            Excursion programs and research exposure built my foundation for success.
+          </p>
+          <div class="testimonial-name">Abhishek Kumar Maurya</div>
+          <div class="testimonial-role">Faculty, PhysicsWallah</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="zoology">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Abhishek_Santosh_Shelke.jpg" alt="Abhishek Santosh Shelke">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            My PG journey at RJ built a strong foundation for my career in EdTech.
+            The professors’ support and appreciation meant everything.
+          </p>
+          <div class="testimonial-name">Abhishek Santosh Shelke</div>
+          <div class="testimonial-role">Associate SME (Anatomy & Physiology), Bartleby Pvt. Ltd.</div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="zoology">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Vandana_Yadav.png" alt="Vandana Yadav">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            Proud RJ Zoology alumna! The teachers trained me with life lessons and skills
+            that led me to professional success.
+          </p>
+          <div class="testimonial-name">Vandana Yadav</div>
+          <div class="testimonial-role">Senior Sales Executive, Ashok Leyland</div>
+        </div>
+      </div>
+
+      <!-- Biotechnology -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="biotech">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Saroj_Rameshkumar_Ramashankar.jpg" alt="Saroj Rameshkumar Ramashankar">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College made me stronger and more independent. The environment, faculty,
+            and events like the drama on women empowerment helped me grow with confidence.
+          </p>
+          <div class="testimonial-name">Saroj Rameshkumar Ramashankar</div>
+          <div class="testimonial-role">(AG-III) TA, Food Corporation of India</div>
+        </div>
+      </div>
+
+      <!-- Physics -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="physics">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Gopi_Vishwakarma.jpeg" alt="Gopi Vishwakarma">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ Physics Department nurtured my passion for research and helped me clear GATE. 
+            I’ve now joined the Ph.D. program at the Institute for Plasma Research (IPR).
+          </p>
+          <div class="testimonial-name">Gopi Vishwakarma</div>
+          <div class="testimonial-role">Ph.D. Student, Institute for Plasma Research (IPR), Gandhinagar</div>
+          <a href="https://youtube.com/shorts/xlU1o7Y0jjk?si=uxLR8WGHlVb3Wen9" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+            Watch Video
+          </a>
+        </div>
+      </div>
+
+      <!-- Commerce -->
+      <div class="col-md-4 col-sm-6 slide-up testimonial-item" data-category="commerce">
+        <div class="testimonial-card">
+          <img src="../assets/testimonials/Omkar_Sawant.jpeg" alt="Omkar Sawant">
+          <div class="testimonial-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="testimonial-text">
+            RJ College professors supported me throughout my CA and B.Com studies.
+            The library and reading room facilities were invaluable.
+            Even after graduation, I still feel connected to RJ.
+          </p>
+          <div class="testimonial-name">Omkar Sawant</div>
+          <div class="testimonial-role">Manager, Vistra International Expansion Pvt. Ltd.</div>
+        </div>
+      </div>
+    </div>
+
+    
+    </main>
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+  <!-- JS -->
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  /* === SLIDE-UP ANIMATION === */
+  const elements = document.querySelectorAll('.slide-up');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  elements.forEach(el => observer.observe(el));
+
+  /* === MASONRY INITIALIZATION === */
+  const grid = document.querySelector('#testimonialContainer');
+  const masonry = new Masonry(grid, {
+    itemSelector: '.testimonial-item',
+    gutter: 20,
+    percentPosition: true
+  });
+
+  /* === FILTER BUTTONS === */
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const testimonialItems = document.querySelectorAll(".testimonial-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      // toggle active button
+      document.querySelector(".filter-btn.active")?.classList.remove("active");
+      button.classList.add("active");
+
+      const filter = button.dataset.filter;
+
+      testimonialItems.forEach(item => {
+        if (filter === "all" || item.dataset.category === filter) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // relayout Masonry after filtering
+      masonry.layout();
+    });
+  });
+
+});
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
